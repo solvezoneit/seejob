@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>Employer-detaile</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="canonical" href=""/>
+		<meta charset="UTF-8" /> 
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<meta name="description" content=""/>
+		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+		<meta name="google-site-verification" content="" />
+		<meta name="keywords" content=""/>
+		<meta http-equiv="Content-Language" content="en-us" > 
+		<meta name="revisit-after" content="1 days" > 
+		<meta name="RATING" content="General" > 
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="css/w3.css"><link rel="stylesheet" href="socicon/social_media.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="seejob.css">
+		<!-- page specific plugin styles -->
+		<script src="js/3.2.1-jquery.min.js"></script>
+		<script src="js/3.3.7-js-bootstrap.min.js"></script>
+		<script defer src="js/fontawesome.com.js"></script>
+		<meta name="description" content="" />
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+		
+		<style>
+		h2{
+		  text-align:center;
+		  padding: 20px;
+		}
+		/* Slider */
+
+		.slick-slide {
+			margin: 0px 20px;
+		}
+
+		.slick-slide img {
+			width: 100%;
+		}
+
+		.slick-slider
+		{
+			position: relative;
+			display: block;
+			box-sizing: border-box;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+					user-select: none;
+			-webkit-touch-callout: none;
+			-khtml-user-select: none;
+			-ms-touch-action: pan-y;
+				touch-action: pan-y;
+			-webkit-tap-highlight-color: transparent;
+		}
+
+		.slick-list
+		{
+			position: relative;
+			display: block;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+		}
+		.slick-list:focus
+		{
+			outline: none;
+		}
+		.slick-list.dragging
+		{
+			cursor: pointer;
+			cursor: hand;
+		}
+
+		.slick-slider .slick-track,
+		.slick-slider .slick-list
+		{
+			-webkit-transform: translate3d(0, 0, 0);
+			   -moz-transform: translate3d(0, 0, 0);
+				-ms-transform: translate3d(0, 0, 0);
+				 -o-transform: translate3d(0, 0, 0);
+					transform: translate3d(0, 0, 0);
+		}
+
+		.slick-track
+		{
+			position: relative;
+			top: 0;
+			left: 0;
+			display: block;
+		}
+		.slick-track:before,
+		.slick-track:after
+		{
+			display: table;
+			content: '';
+		}
+		.slick-track:after
+		{
+			clear: both;
+		}
+		.slick-loading .slick-track
+		{
+			visibility: hidden;
+		}
+
+		.slick-slide
+		{
+			display: none;
+			float: left;
+			height: 100%;
+			min-height: 1px;
+		}
+		[dir='rtl'] .slick-slide
+		{
+			float: right;
+		}
+		.slick-slide img
+		{
+			display: block;
+		}
+		.slick-slide.slick-loading img
+		{
+			display: none;
+		}
+		.slick-slide.dragging img
+		{
+			pointer-events: none;
+		}
+		.slick-initialized .slick-slide
+		{
+			display: block;
+		}
+		.slick-loading .slick-slide
+		{
+			visibility: hidden;
+		}
+		.slick-vertical .slick-slide
+		{
+			display: block;
+			height: auto;
+			border: 1px solid transparent;
+		}
+		.slick-arrow.slick-hidden {
+			display: none;
+		}
+		.comparison {
+		  max-width:940px;
+		  margin:0 auto;
+		  font:13px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+		  text-align:center;
+		  padding:10px;
+		}
+
+		.comparison table {
+		  width:100%;
+		  border-collapse: collapse;
+		  border-spacing: 0;
+		  table-layout: fixed;
+		  border-bottom:1px solid #CCC;
+		}
+
+		.comparison td, .comparison th {
+		  border-right:1px solid #CCC;
+		  empty-cells: show;
+		  padding:10px;
+		}
+
+		.compare-heading {
+		  font-size:18px;
+		  font-weight:bold !important;
+		  border-bottom:0 !important;
+		  padding-top:10px !important;
+		}
+
+		.comparison tbody tr:nth-child(odd) {
+		  display:none;
+		}
+
+		.comparison .compare-row {
+		  background:#F5F5F5;
+		}
+
+		.comparison .tickblue {
+		  color:#0078C1;
+		}
+
+		.comparison .tickgreen {
+		  color:#009E2C;
+		}
+
+		.comparison th {
+		  font-weight:normal;
+		  padding:0;
+		  border-bottom:1px solid #CCC;
+		}
+
+		.comparison tr td:first-child {
+		  text-align:left;
+		}
+		  
+		.comparison .qbse, .comparison .qbo, .comparison .tl {
+		  color:#FFF;
+		  padding:10px;
+		  font-size:13px;
+		  border-right:1px solid #CCC;
+		  border-bottom:0;
+		}
+
+		.comparison .tl2 {
+		  border-right:0;
+		}
+
+		.comparison .qbse {
+		  background:#0078C1;
+		  border-top-left-radius: 3px;
+		  border-left:0px;
+		}
+
+		.comparison .qbo {
+		  background:#009E2C;
+		  border-top-right-radius: 3px;
+		  border-right:0px;
+		}
+
+		.comparison .price-info {
+		  padding:5px 15px 15px 15px;
+		}
+
+		.comparison .price-was {
+		  color:#999;
+		  text-decoration: line-through;
+		}
+
+		.comparison .price-now, .comparison .price-now span {
+		  color:#ff5406;
+		}
+
+		.comparison .price-now span {
+		  font-size:32px;
+		}
+
+		.comparison .price-small {
+			font-size: 18px !important;
+			position: relative;
+			top: -11px;
+			left: 2px;
+		}
+
+		.comparison .price-buy {
+		  background:#ff5406;
+		  padding:10px 20px;
+		  font-size:12px;
+		  display:inline-block;
+		  color:#FFF;
+		  text-decoration:none;
+		  border-radius:3px;
+		  text-transform:uppercase;
+		  margin:5px 0 10px 0;
+		}
+
+		.comparison .price-try {
+		  font-size:12px;
+		}
+
+		.comparison .price-try a {
+		  color:#202020;
+		}
+
+		@media (max-width: 767px) {
+		  .comparison td:first-child, .comparison th:first-child {
+			display: none;
+		  }
+		  .comparison tbody tr:nth-child(odd) {
+			display:table-row;
+			background:#F7F7F7;
+		  }
+		  .comparison .row {
+			background:#FFF;
+		  }
+		  .comparison td, .comparison th {
+			border:1px solid #CCC;
+		  }
+		  .price-info {
+		  border-top:0 !important;
+		  
+		}
+		  
+		}
+
+		@media (max-width: 639px) {
+		  .comparison .price-buy {
+			padding:5px 10px;
+		  }
+		  .comparison td, .comparison th {
+			padding:10px 5px;
+		  }
+		  .comparison .hide-mobile {
+			display:none;
+		  }
+		  .comparison .price-now span {
+		  font-size:16px;
+		}
+
+		.comparison .price-small {
+			font-size: 16px !important;
+			top: 0;
+			left: 0;
+		}
+		  .comparison .qbse, .comparison .qbo {
+			font-size:12px;
+			padding:10px 5px;
+		  }
+		  .comparison .price-buy {
+			margin-top:10px;
+		  }
+		  .compare-heading {
+		  font-size:13px;
+		}
+		}
+			.img_postion
+			{
+			position: relative;
+			width:100%;
+			height: auto;
+			
+			}
+			.price_list
+			{
+				margin-top:20px;
+				margin-bottom:20px;
+			}
+			
+			.button_index {
+			background-color:white; /* Green */
+			border: 1px solid #337ab7;;
+			color: #337ab7;
+			padding: 12px 29px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 13px;
+			margin: 4px 2px;
+			cursor: pointer;
+			-webkit-transition-duration: 0.4s; /* Safari */
+			transition-duration: 0.4s;
+			}
+			.price_box:hover {
+				
+				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+			}
+
+			.buttonin:hover {
+				background-color:#337ab7; 
+				color:white;
+				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+			}
+				.button_index1 {
+				background-color:transparent; /* Green */
+				border: 1px solid #fff;
+				color: #fff;
+				padding: 12px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 13px;
+				margin: 4px 2px;
+				cursor: pointer;
+				-webkit-transition-duration: 0.4s; /* Safari */
+				transition-duration: 0.4s;
+			}
+
+			.buttonin1:hover {
+				background-color:#337ab7; 
+				color:white;
+				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+				border:none;
+			}
+				.button_index2 {
+				background-color:#337ab7; /* Green */
+				color: #fff;
+				padding: 12px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 13px;
+				margin: 4px 2px;
+				cursor: pointer;
+				-webkit-transition-duration: 0.4s; /* Safari */
+				transition-duration: 0.4s;
+			}
+
+			.buttonin2:hover {
+				background-color:transparent; 
+				color:white;
+				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+				border:1px solid #fff;
+			}
+			.employer_content
+			{
+			margin-top:100px;
+			background-color:#ffffff85;
+			margin:80px;
+			padding:20px;
+			}
+			.employer_heading
+			{
+				color:#fff;
+			}
+			.emp_city
+			{
+			margin:5px;
+			width:92%;
+			color:gray;
+			padding:6px;
+			background-color:white;
+			border:1px solid lightgray;
+			}
+			.heding_color
+			{
+			
+			}
+			.inquiry_form
+			{
+			background-color:#ffffffcf;
+			border:1px solid lightgray;
+			padding:20px;
+			margin:20px;
+			margin-top:40px;
+			}
+			.input_emp
+			{
+			margin:5px;
+			padding:5px;
+			background-color:white;
+			border:1px solid lightgray;
+			}
+			.emp_btn
+			{
+			
+			padding:6px 12px;
+			margin:5px;
+			}
+		</style>
+</head>
+	
+<body class="apjobbg">
+  <div class="container-fluid" style="padding-left:0px;padding-right:0px;">
+		<!-- main header -->
+	<nav class="navbar navbar-default megamenu sticky" style="z-index:1; margin-bottom:0px;font-family: -webkit-pictograph;">
+	  <div class="container-fluid">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	          <span class="sr-only">Toggle navigation</span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="index.html"><img src="image/seelogo.png" alt="logo" width="150"></a>
+	      </div>
+
+	      <!-- Collect the nav links, forms, and other content for toggling -->
+	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	        <ul class="nav navbar-nav">
+	          <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+	          <li class="dropdown megamenu-fw">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resume Writing<span class="caret"></span></a>
+	            <ul class="dropdown-menu megamenu-content" role="menu">
+	              	<li>
+					    <div class="row">
+					        <div class="col-sm-4">
+					      		<h3 class="title">Featured Products</h3>
+								
+								<div data-ride="carousel" class="carousel slide" id="myCarousel">
+	                              <div class="carousel-inner">
+	                                <div class="item active left">
+	                                    <a href="#"><img alt="product 1" class="img-responsive" src="http://placehold.it/350x200/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+	                                    <h4><small>Featured Product 1</small></h4>                                        
+	                                    <button type="button" class="btn btn-default" href="#"> Add to Wishlist</button>       
+	                                </div><!-- End Item -->
+	                                <div class="item next left">
+	                                    <a href="#"><img alt="product 2" class="img-responsive" src="http://placehold.it/350x200/ef5e55/f5f5f5/&amp;text=Featured+Product"></a>
+	                                    <h4><small>Featured Product 2</small></h4>                                        
+	                                    <button type="button" class="btn btn-default" href="#"> Add to Wishlist</button>        
+	                                </div><!-- End Item -->
+	                                <div class="item">
+	                                    <a href="#"><img alt="product 3" class="img-responsive" src="http://placehold.it/350x200/2ecc71/f5f5f5/&amp;text=Featured+Product"></a>
+	                                    <h4><small>Featured Product 3</small></h4>                                        
+	                                    <button type="button" class="btn btn-default" href="#"> Add to Wishlist</button>      
+	                                </div><!-- End Item -->                                
+	                              </div><!-- End Carousel Inner -->
+	                            </div>
+					        </div><!-- end col-4 -->
+					        <div class="col-sm-4">
+					      		<h3 class="title">Latest Tutorials</h3>
+					            <ul class="media-list">
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">How To Master Fireworks’ CSS Properties Panel And CSS Professionalzr</a></p>
+					                    </div>
+					                </li>
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/ef5e55/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">Making A Complete Polyfill For The HTML5 Details Element</a></p>
+					                    </div>
+					                </li>
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/2ecc71/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">Creating A “Save For Later” Chrome Extension With Modern Web Tools</a></p>
+					                    </div>
+					                </li>
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">Scaling Down The BEM Methodology For Small Projects</a></p>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div><!-- end col-4 -->
+					        <div class="col-sm-4">
+					      		<h3 class="title">Google Map</h3>
+					      			<iframe width="340" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://my.ctrlq.org/maps/#roadmap|10|41.001769314909254|-74.88742636132815"></iframe>
+					        </div><!-- end col-4 -->
+					    </div><!-- end row -->
+					    <hr>
+					    <div class="row">
+					    	<div class="col-sm-6">
+					      		<h3 class="title">About Us</h3>
+					        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					        </div><!-- end col-6 -->
+					    	<div class="col-sm-3">
+					      		<h3 class="title">Follow Us</h3>
+					        	<p></p>
+					        </div><!-- end col-3 -->
+					    	<div class="col-sm-3">
+					      		<h3 class="title">Subscribe</h3>
+					        	<form class="navbar-form nopadding" method="post" action="">
+									<input type="text" class="form-control" placeholder="Enter email" name="email">
+									<input type="submit" value="Go" class="btn btn-primary">
+								</form>   
+					   		</div>               
+					    </div>
+					</li>
+	            </ul>
+	          </li>
+	          <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-image"></i> Recruiter Reach<span class="caret"></span></a>
+	            <ul class="dropdown-menu" role="menu">
+	              <li><a href="#">Action</a></li>
+	              <li><a href="#">Another action</a></li>
+	              <li><a href="#">Something else here</a></li>
+	              <li class="divider"></li>
+	              <li><a href="#">Separated link</a></li>
+	              <li class="divider"></li>
+	              <li><a href="#">One more separated link</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	        <form class="navbar-form navbar-left" role="search">
+	          <div class="form-group">
+	            <input type="text" class="form-control" placeholder="Search">
+	          </div>
+	          <button type="submit" class="btn btn-default">Submit</button>
+	        </form>
+	        <ul class="nav navbar-nav navbar-right">
+			  <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="far fa-bell"></i><span class="caret"></span></a>
+	            <ul class="dropdown-menu" role="menu">
+				  <li><a href="#"><span>Job Recommundation</span><p class="myprofile_para">Accosiate- Contract Drafting thomas return<p></a></li>
+				  <li class="divider"></li>
+				  <li><a href="#"><span>Job Recommundation</span><p class="myprofile_para">Accosiate- Contract Drafting thomas return<p></a></li>
+				  <li class="divider"></li>
+				  <li><a href="#"><span>Job Recommundation</span><p class="myprofile_para">Accosiate- Contract Drafting thomas return<p></a></li>
+				  <li class="divider"></li>
+				  <li><a href="#"><span>Job Recommundation</span><p class="myprofile_para">Accosiate- Contract Drafting thomas return<p></a></li>
+				  <li class="divider"></li>
+				  <li><a href="applyjobseekerpage.html"><span >See all</span></a></a></li>
+	            </ul>
+	          </li>
+				
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="far fa-user"></i><span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+					    <li><a href="updateprofilepage.html"  class="anchor_margin"><i class="fas fa-user-plus myp_btn"></i>&nbsp;Edit Profile</a></li>
+						<li class="divider"></li>
+						<li><a href="#"  class="anchor_margin"><i class="fas fa-spinner myp_btn"></i>&nbsp;Profile Performance</a></li>
+						<li class="divider"></li>
+						<li><a href="#" class="anchor_margin"><i class="fas fa-ban myp_btn"></i>&nbsp;Block Companies</a></li>
+						<li class="divider"></li>
+						<li><a href="#" class="anchor_margin"><i class="fas fa-lock-open myp_btn"></i>&nbsp;Change Password</a></li>
+						<li class="divider"></li>
+						<li><a href="loginpage.html" class="anchor_delete"><i class="fas fa-sign-out-alt myp_btn"></i>Logout</a></li>
+					</ul>
+				</li>
+	        </ul>
+	      </div><!-- /.navbar-collapse -->
+	  </div>
+	</nav>
+		
+		<div class="container-fluid heding_color" style="background-image:url(image/employer_banner6.jpg);background-image:cover;width:100%;height:auto;">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="employer_content">
+						<div class="employer_heading">Hire people for your business with ease</h1>
+							<p class="employer_heading">Search over 1 crore+ blue-collar and entry-level resumes.</p>
+							<div class="text-center">
+								<button class="button_index1 buttonin1">Post Job</button>
+								<button class="button_index2 buttonin2">Find CV</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-3 col-md-offset-3">
+					<div class="inquiry_form">
+						<form>
+							<div class=" inside_form text-center">
+								<div class=" col-md-12 text-center"style="margin-top:-40px;">
+									<i class="fas fa-user fa-4x img-circle" style="border:solid;padding:5px;background-color:white;color:lightgray;"></i>
+								</div>
+								<p>Access the Candidate Database!</p>
+								<hr style="margin:5px;">
+								<div class="form-group">
+									<div class="input-group col-sm-12 ">
+										<input id="uname" type="name" class="form-control" name="uname" placeholder="Enter Username" style="border:none;">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="input-group col-sm-12 ">
+										<input id="email" type="email" class="form-control" name="email" placeholder="Enter Email" style="border:none;">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="input-group col-sm-12 ">
+										<input id="tel" type="tel" class="form-control" name="tel" placeholder="Enter Number" style="border:none;">
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<div class="input-group col-sm-12 ">
+										<select class="chosen-select form-control" id="" data-placeholder="Choose a State..."style="border:none;">
+											<option value="australia">Delhi</option>
+											<option value="canada">Noida</option>
+											<option value="usa">Bangalore</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="input-group col-sm-12 ">
+									 <button type="button" class="btn btn-warning btn-block " class="">Send Request</button>
+									</div>
+								</div>
+								<span style="font-size:10px;">For any query call us at 789987644</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid wait"  style="background: linear-gradient(to top,lightgray  0%, #fff 100%);padding-bottom:20px;">
+			<div class="row text-center">
+				<h2>What We Offer</h2>
+				<p>Save time and receive relevant responses using our intelligent filter technologies</p>
+				<hr>
+				<div class="container">
+					<div class="col-md-3 col-md-offset-3">
+						<div style="background-color:white;">
+							<img src="image/for-employer.jpg" alt="icon" class="" style="width:100%;height:150px;">
+							<div style="padding:5px;">
+								<h4>ADVERTISE YOUR JOB</h4>
+								<hr>
+								<p>India’s no. 1 hiring platform for blue collar and entry level white collarfor blue collar and entry level white  roles.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div style="background-color:white;">
+							<img src="image/find-candidate.jpg" alt="icon" class="" style="width:100%;height:150px;">
+							<div style="padding:5px;">
+								<h4>ADVERTISE YOUR JOB</h4>
+								<hr>
+								<p>India’s no. 1 hiring  platform for blue collar and entry level white collarfor blue collar and entry level white  roles.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- <div class="container"> -->
+		  <!-- <h2>Our  Partners</h2> -->
+		   <!-- <section class="customer-logos slider"> -->
+			  <!-- <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div> -->
+			  <!-- <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div> -->
+			  <!-- <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div> -->
+			  <!-- <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div> -->
+			  <!-- <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div> -->
+			  <!-- <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div> -->
+			  <!-- <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div> -->
+			  <!-- <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div> -->
+		   <!-- </section> -->
+		<!-- </div> -->
+
+		<!-- Container (Pricing Section) -->
+		
+			<div class="comparison">
+				<div class="text-center">
+					<h2>Pricing List</h2>
+					<h4>Choose a payment plan that works for you</h4>
+					<hr>
+				</div>
+			  <table>
+				<thead>
+				  <tr>
+					<th class="tl tl2"></th>
+					<th class="qbse">
+					  Self-Employed & Freelance
+					</th>
+					<th colspan="3" class="qbo">
+					  Small businesses that need accounting, invoicing or payroll
+					</th>
+				  </tr>
+				  <tr>
+					<th class="tl"></th>
+					<th class="compare-heading">
+					  Self-Employed
+					</th>
+					<th class="compare-heading">
+					  Simple Start
+					</th>
+					<th class="compare-heading">
+					  Essentials
+					</th>
+					<th class="compare-heading">
+					  Plus
+					</th>
+				  </tr>
+				  <tr>
+					<th></th>
+					<th class="price-info">
+					  <div class="price-was">Was £6.00</div>
+					  <div class="price-now"><span>£4<span class="price-small">.20</span></span> /month</div>
+					  <div><a href="#" class="price-buy">Buy <span class="hide-mobile">Now</span></a></div>
+					  <div class="price-try"><span class="hide-mobile">or </span><a href="#">try <span class="hide-mobile">it free</span></a></div>
+					</th>
+					<th class="price-info">
+					  <div class="price-was">Was £7.00</div>
+					  <div class="price-now"><span>£5<span class="price-small">.60</span></span> /month</div>
+					  <div><a href="#" class="price-buy">Buy <span class="hide-mobile">Now</span></a></div>
+					  <div class="price-try"><span class="hide-mobile">or </span><a href="#">try <span class="hide-mobile">it free</span></a></div>
+					</th>
+					<th class="price-info">
+					  <div class="price-was">Was £15.00</div>
+					  <div class="price-now"><span>£10<span class="price-small">.50</span></span> /month</div>
+					  <div><a href="#" class="price-buy">Buy <span class="hide-mobile">Now</span></a></div>
+					  <div class="price-try"><span class="hide-mobile">or </span><a href="#">try <span class="hide-mobile">it free</span></a></div>
+					</th>
+					<th class="price-info">
+					  <div class="price-was">Was £25.00</div>
+					  <div class="price-now"><span>£15<span class="price-small">.00</span></span> /month</div>
+					  <div><a href="#" class="price-buy">Buy <span class="hide-mobile">Now</span></a></div>
+					  <div class="price-try"><span class="hide-mobile">or </span><a href="#">try <span class="hide-mobile">it free</span></a></div>
+					</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td></td>
+					<td colspan="4">Seperate business from personal spending</td>
+				  </tr>
+				  <tr class="compare-row">
+					<td>Seperate business/personal</td>
+					<td><span class="tickblue">✔</span></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td>&nbsp;</td>
+					<td colspan="4">Estimate tax payments</td>
+				  </tr>
+				  <tr>
+					<td>Estimate tax payments</td>
+					<td><span class="tickblue">✔</span></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td>&nbsp;</td>
+					<td colspan="4">Track deductible mileage</td>
+				  </tr>
+				  <tr class="compare-row">
+					<td>Track deductible mileage</td>
+					<td><span class="tickblue">✔</span></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<td>&nbsp;</td>
+					<td colspan="4">Download online banking</td>
+				  </tr>
+				  <tr>
+					<td>Download online banking</td>
+					<td><span class="tickblue">✔</span></td>
+					<td><span class="tickgreen">✔</span></td>
+					<td><span class="tickgreen">✔</span></td>
+					<td><span class="tickgreen">✔</span></td>
+				  </tr>
+				  <tr>
+					<td>&nbsp;</td>
+					<td colspan="4">Works on PC, Mac & mobile</td>
+				  </tr>
+				  <tr class="compare-row">
+					<td>Multi-device</td>
+					<td><span class="tickblue">✔</span></td>
+					<td><span class="tickgreen">✔</span></td>
+					<td><span class="tickgreen">✔</span></td>
+					<td><span class="tickgreen">✔</span></td>
+				  </tr>
+				  <tr>
+					<td>&nbsp;</td>
+					<td colspan="4">Create invoices & estimates</td>
+				  </tr>
+				  <tr>
+					<td>Create invoices & estimates</td>
+					<td></td>
+					<td><span class="tickgreen">✔</span></td>
+					<td><span class="tickgreen">✔</span></td>
+					<td><span class="tickgreen">✔</span></td>
+				  </tr>
+				  <tr>
+					<td>&nbsp;</td>
+					<td colspan="4">Manage VAT</td>
+				  </tr>
+				  <tr class="compare-row">
+					<td>Manage VAT</td>
+					<td></td>
+					<td><span class="tickgreen">✔</span></td>
+					<td><span class="tickgreen">✔</span></td>
+					<td><span class="tickgreen">✔</span></td>
+				  </tr>
+				  <tr>
+					<td>&nbsp;</td>
+					<td colspan="4">Run payroll</td>
+				  </tr>
+				  <tr>
+					<td>Run payroll</td>
+					<td></td>
+					<td><span class="tickgreen">✔</span></td>
+					<td><span class="tickgreen">✔</span></td>
+					<td><span class="tickgreen">✔</span></td>
+				  </tr>
+				  <tr>
+					<td>&nbsp;</td>
+					<td colspan="4">Number of users</td>
+				  </tr>
+				  <tr class="compare-row">
+					<td>Number of users</td>
+					<td class="tickblue">1 user</td>
+					<td class="tickgreen">1 user</td>
+					<td class="tickgreen">3 users</td>
+					<td class="tickgreen">5 users</td>
+				  </tr>
+				  <tr>
+					<td>&nbsp;</td>
+					<td colspan="4">Manage bills & payments</td>
+				  </tr>
+				  <tr>
+					<td>Manage bills & payments</td>
+					<td></td>
+					<td></td>
+					<td><span class="tickgreen">✔</span></td>
+					<td><span class="tickgreen">✔</span></td>
+				  </tr>
+				  <tr>
+					<td>&nbsp;</td>
+					<td colspan="4">Handle multiple currencies</td>
+				  </tr>
+				  <tr class="compare-row">
+					<td>Handle multiple currencies</td>
+					<td></td>
+					<td></td>
+					<td><span class="tickgreen">✔</span></td>
+					<td><span class="tickgreen">✔</span></td>
+				  </tr>
+				  <tr>
+					<td>&nbsp;</td>
+					<td colspan="4">Create budgets</td>
+				  </tr>
+				  <tr>
+					<td>Create budgets</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><span class="tickgreen">✔</span></td>
+				  </tr>
+				  <tr>
+					<td>&nbsp;</td>
+					<td colspan="4">Track employee time</td>
+				  </tr>
+				  <tr class="compare-row">
+					<td>Track employee time</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><span class="tickgreen">✔</span></td>
+				  </tr>
+				  <tr>
+					<td>&nbsp;</td>
+					<td colspan="4">Stock control</td>
+				  </tr>
+				  <tr>
+					<td>Stock control</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><span class="tickgreen">✔</span></td>
+				  </tr>
+				</tbody>
+			  </table>
+			</div>
+
+	<!-- <div class="container"> -->
+		<!-- <div class="price_list"> -->
+		  
+			<!-- <div class="row"> -->
+				<!-- <div class="col-sm-4 col-xs-12"> -->
+				  <!-- <div class="panel panel-default text-center price_box"> -->
+					<!-- <div class="panel-heading" style="background-color:#337ab7;"> -->
+					  <!-- <h1 style="color:white;">Free</h1> -->
+					<!-- </div> -->
+					<!-- <div class="panel-body"> -->
+					  <!-- <p><strong>20</strong> Lorem</p> -->
+					  <!-- <p><strong>15</strong> Ipsum</p> -->
+					  <!-- <p><strong>5</strong> Dolor</p> -->
+					  <!-- <p><strong>2</strong> Sit</p> -->
+					  <!-- <p><strong>Endless</strong> Amet</p> -->
+					<!-- </div> -->
+					<!-- <div class="panel-footer"> -->
+					  <!-- <h3>$19</h3> -->
+					  <!-- <h4>per month</h4> -->
+					  <!-- <button class="button_index buttonin btn btn-lg">Sign Up</button> -->
+					<!-- </div> -->
+				  <!-- </div>       -->
+				<!-- </div>      -->
+				<!-- <div class="col-sm-4 col-xs-12 "> -->
+				 <!-- <div class="panel panel-default text-center price_box"> -->
+					<!-- <div class="panel-heading" style="background-color:#337ab7;"> -->
+					  <!-- <h1 style="color:white;">Basic</h1> -->
+					<!-- </div> -->
+					<!-- <div class="panel-body"> -->
+					  <!-- <p><strong>50</strong> Lorem</p> -->
+					  <!-- <p><strong>25</strong> Ipsum</p> -->
+					  <!-- <p><strong>10</strong> Dolor</p> -->
+					  <!-- <p><strong>5</strong> Sit</p> -->
+					  <!-- <p><strong>Endless</strong> Amet</p> -->
+					<!-- </div> -->
+					<!-- <div class="panel-footer"> -->
+					  <!-- <h3>$29</h3> -->
+					  <!-- <h4>per month</h4> -->
+						<!-- <button class="button_index buttonin btn btn-lg">Sign Up</button> -->
+					<!-- </div> -->
+				  <!-- </div>       -->
+				<!-- </div>        -->
+				<!-- <div class="col-sm-4 col-xs-12"> -->
+				  <!-- <div class="panel panel-default text-center price_box"> -->
+					<!-- <div class="panel-heading" style="background-color:#337ab7;"> -->
+					  <!-- <h1 style="color:white;">Premium</h1> -->
+					<!-- </div> -->
+					<!-- <div class="panel-body"> -->
+					  <!-- <p><strong>100</strong> Lorem</p> -->
+					  <!-- <p><strong>50</strong> Ipsum</p> -->
+					  <!-- <p><strong>25</strong> Dolor</p> -->
+					  <!-- <p><strong>10</strong> Sit</p> -->
+					  <!-- <p><strong>Endless</strong> Amet</p> -->
+					<!-- </div> -->
+					<!-- <div class="panel-footer"> -->
+					  <!-- <h3>$49</h3> -->
+					  <!-- <h4>per month</h4> -->
+					  <!-- <button class="button_index buttonin btn btn-lg">Sign Up</button> -->
+					<!-- </div> -->
+				  <!-- </div>       -->
+				<!-- </div>     -->
+			<!-- </div> -->
+		<!-- </div> -->
+	<!-- </div> -->
+	<div class="container" style="margin-top:10px;margin-bottom:10px;">
+		<h2>Our Partners</h2>
+		<hr>
+		   <section class="customer-logos slider">
+			  <div class="slide"><img src="image/icic_icon.jpg"></div>
+			  <div class="slide" style="background-color:#fff;"><center><img src="image/kotak_icon.jpg" align="center" width="auto" style=" display: block;
+				margin: 0 auto;"></center></div>
+			  <div class="slide"><img src="image/facebook_circle-512.png"></div>
+			  <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+			  <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+			  <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+			  <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+			  <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg" style=""></div>
+			  <div class="slide"><img src="image/google.png"></div>
+		   </section>
+	</div>
+	
+	<!-- Slider image -->
+
+	<!-- <div style="background-color:#fff;"> -->
+		<!-- <div class="container" style="border:solid1; "> -->
+			<!-- <marquee> -->
+				<!-- <ul  class="list-inline" style="list-style-type:none;"> -->
+					<!-- <li style="border-radius:5px;"><img src="image/icic_icon.jpg" alt="img" style="width:130px;border:solid;"></li> -->
+					<!-- <li style="border-radius:5px;"><img src="image/axis_icon.png" alt="img" style="width:130px;border:solid;"></li> -->
+					<!-- <li style="border-radius:5px;"><img src="image/city_icon.png" alt="img" style="width:130px;border:solid;"></li> -->
+					<!-- <li style="border-radius:5px;"><img src="image/facebook_circle-512.png" alt="img" style="width:100px;border:solid;"></li> -->
+					<!-- <li style="border-radius:5px;"><img src="image/google.png" alt="img" style="width:130px;border:solid;"></li> -->
+					<!-- <li style="border-radius:5px;"><img src="image/hdfc_logo.jpg" alt="img" style="width:130px;border:solid;"></li> -->
+					<!-- <li style="border-radius:5px;"><img src="image/icic_icon.jpg" alt="img" style="width:130px;border:solid;"></li> -->
+					<!-- <li style="border-radius:5px;"><img src="image/kotak_icon.jpg" alt="img" style="width:130px;border:solid;"></li> -->
+				<!-- </ul> -->
+			<!-- </marquee> -->
+		<!-- </div> -->
+	<!-- </div> -->
+	
+		<!-- Slider image-end -->
+				  <!--Footer-->
+	<div class="container-fluid text-left" style="background-color:#000;">
+		<div class="col-md-3" >
+		  <ul class="f_list f_list index_footul">
+			<li class="footer_heading">Information</li>
+			<li><a href="index.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;About Us</a></li>
+			<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Terms&Conditions</a></li>
+				<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Privacy Policy</a></li>
+			<li><a href="about.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Careers with Us</a></li>
+			<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Contact Us</a></li>
+			<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Fraud Alert</a></li>
+			<li><a href="about.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;FAQs</a></li>
+			<li><a href="index.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Summons / Notices</a></li>
+		  </ul>
+		</div>
+
+		<div class="col-md-3">
+			 <ul class="f_list f_list index_footul">
+			<li class="footer_heading">Job Seeker</li>
+				<li><a href="index.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Resume Writing</a></li>
+				<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Resume Display </a></li>
+				<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Resume Forwording</a></li>
+				<li><a href="about.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Connect to Recruiter</a></li>
+				<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Cover Letter</a></li>
+				<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Job Search </a></li>
+			</ul>
+		</div>
+
+		<div class="col-md-3">
+			<ul class="f_list f_list index_footul">
+				<li class="footer_heading">Employer Zone</li>
+				<li><a href="index.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Post Jobs</a></li>
+				<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Find CV </a></li>
+				<form class="example employer_exp" action="/action_page.php">
+					<div> 
+						<h4 class="index_news">Subscribe Our Newsletter</h4>
+						<input type="text" placeholder="Enter your email-id" name="search2" style="background-color:#fff; padding:5px; width:70%">
+						<button type="submit" style="background: -webkit-linear-gradient(top,#f8e3ad,#eeba37); padding:7px;"><i class="fas fa-envelope"></i></button>
+					</div>
+				</form>
+			</ul>
+		</div>
+		  
+		<div class="col-md-3 ">
+			<ul class="f_list f_list index_footul">
+				<li class="footer_heading">Contact Us</li>
+				<li>
+					<div class="col-sm-6 index_footer">
+						<input type="text" class="form-control " placeholder="Enter Name" name="name" style="background-color:#fff;">
+					</div>
+					<div class="col-sm-6 index_footer">
+						<input type="email" class="form-control " placeholder="Enter email" name="Name" style="background-color:#fff;">
+					</div>
+					<div class="col-sm-12 index_footer">
+						<textarea class="form-control " rows="5" id="comment" placeholder="Type your msg..." style="background-color:#fff;"></textarea>
+					</div>
+					<div class="text-center">
+						<button type="button" class="btn btn-warning btn-block">Submit</button>
+					</div>
+					<div class="">
+						<ul class="soc index_social text-center">
+							<li><a class="soc-twitter" href="#" target="_blank"></a></li>
+							<li><a class="soc-facebook" href="#" target="_blank"></a></li>
+							<li><a class="soc-googleplus" href="#" target="_blank"></a></li>
+							<li><a class="soc-linkedin" href="#" target="_blank"></a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div style="padding:10px;text-align:center;color:#fff;border:0px solid #fff;">©2018 Seejob.com. All Rights Reserved.</div>
+	</div>
+				<!--Footer-->
+				
+				<script>
+					$(document).ready(function(){
+					$('.customer-logos').slick({
+						slidesToShow: 6,
+						slidesToScroll: 1,
+						autoplay: true,
+						autoplaySpeed: 1500,
+						arrows: false,
+						dots: false,
+						pauseOnHover: false,
+						responsive: [{
+							breakpoint: 768,
+							settings: {
+								slidesToShow: 4
+							}
+						}, {
+							breakpoint: 520,
+							settings: {
+								slidesToShow: 3
+							}
+						}]
+					});
+				});
+				</script>
+		
+<!-- inline scripts related to this page -->
+	<script>
+	$('document').ready(function(){
+		$('.post_li').on('click',function(){
+			var getval = $("input[name=optradioname]:checked").val();
+			if(getval){
+				$('.hideoptradio').hide();
+				$('#'+getval).show();
+			}
+		})
+	})
+    </script>
+</body>
+</html>				

@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>applyjobseeker</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- page specific plugin styles -->
+		<link rel="stylesheet" href="ACE/assets/css/select2.min.css" />
+		<link rel="stylesheet" href="ACE/assets/css/jquery-ui.custom.min.css" />
+			<link rel="stylesheet" type="text/css" href="seejob.css">
+		<!-- text fonts -->
+		<link rel="stylesheet" href="ACE/assets/css/fonts.googleapis.com.css" />
+		<!-- ace styles -->
+		<link rel="stylesheet" href="ACE/assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-" />
+		<link rel="stylesheet" href="ACE/assets/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="ACE/assets/css/ace-rtl.min.css" />
+		<script src="ACE/assets/js/ace-extra.min.js"></script>
+		<script src="js/3.2.1-jquery.min.js"></script>
+		<script src="js/3.3.7-js-bootstrap.min.js"></script>
+		<script defer src="js/fontawesome.com.js"></script>
+		<meta name="description" content="" />
+		
+	</head>
+	
+<body class="apjobbg">
+	<div class="container">
+		<nav class="navbar navbar-default navbar-fixed-top emap_nav">
+			<div class="container-nav">
+				<div class="row employe_menu text-center">
+					<div class="col-md-4">
+						<a class="navbar-brand employer_brand" href="index.html">
+							<img src="image/seelogo.png" alt="Obaju logo">
+						</a>
+					</div>
+					<div class="col-md-3">
+						<form class="example employer_exp" action="/action_page.php">
+							<input type="text" placeholder="Search.." name="search2">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+					<div class="col-md-3 col-md-offset-2 apply_margin">
+						<a href="Postjobpage.html" class="btn btn-info employe_btn" role="button" >Post for free </a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="row ">
+			<div class="col-md-3 sticky">
+				<div class="apjob_row">
+					<div class="row search-page" id="search-page-1" >
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 ">
+									<div class="search-area well well-sm ">
+										<div class="search-filter-header bg-primary">
+											<h5 class="smaller no-margin-bottom">
+												<i class="fas fa-filter"></i>&nbsp; Filter
+												</h5>
+										</div>
+										<div class="space-12"></div>
+										<form>
+											<div class="row">
+												<div class="col-xs-12 col-sm-12 col-md-12">
+													<div class="input-group">
+														<input type="text" class="form-control" name="keywords" placeholder="Look within results" />
+														<div class="input-group-btn">
+															<button type="button" class="btn btn-default no-border btn-sm">
+																<i class="ace-icon fa fa-search icon-on-right bigger-110"></i>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+										<div class="hr hr-dotted"></div>
+										<h4 class="blue smaller">
+											<i class="fa fa-tags"></i>
+											RolE
+										</h4>
+										<div class="tree-container">
+											<ul id="cat-tree"></ul>
+										</div>
+										<div class="hr hr-dotted"></div>
+										<h4 class="blue smaller">
+											<i class="fa fa-map-marker light-orange bigger-110"></i>
+											Location
+										</h4>
+										<div>
+											<select multiple="" name="state" class="select2 tag-input-style" data-placeholder="Click to Choose...">
+												<option value="">&nbsp;</option>
+												<option value="AL">Alabama</option>
+												<option value="AK">Alaska</option>
+												<option value="AZ">Arizona</option>
+												<option value="AR">Arkansas</option>
+												<option value="CA">California</option>
+												<option value="CO">Colorado</option>
+												<option value="CT">Connecticut</option>
+												<option value="DE">Delaware</option>
+												<option value="FL">Florida</option>
+												<option value="GA">Georgia</option>
+												<option value="HI">Hawaii</option>
+												<option value="ID">Idaho</option>
+												<option value="IL">Illinois</option>
+												<option value="IN">Indiana</option>
+												<option value="IA">Iowa</option>
+												<option value="KS">Kansas</option>
+												<option value="KY">Kentucky</option>
+												<option value="LA">Louisiana</option>
+												<option value="ME">Maine</option>
+												<option value="MD">Maryland</option>
+												<option value="MA">Massachusetts</option>
+												<option value="MI">Michigan</option>
+												<option value="MN">Minnesota</option>
+												<option value="MS">Mississippi</option>
+												<option value="MO">Missouri</option>
+												<option value="MT">Montana</option>
+												<option value="NE">Nebraska</option>
+												<option value="NV">Nevada</option>
+												<option value="NH">New Hampshire</option>
+												<option value="NJ">New Jersey</option>
+												<option value="NM">New Mexico</option>
+												<option value="NY">New York</option>
+												<option value="NC">North Carolina</option>
+												<option value="ND">North Dakota</option>
+												<option value="OH">Ohio</option>
+												<option value="OK">Oklahoma</option>
+												<option value="OR">Oregon</option>
+												<option value="PA">Pennsylvania</option>
+												<option value="RI">Rhode Island</option>
+												<option value="SC">South Carolina</option>
+												<option value="SD">South Dakota</option>
+												<option value="TN">Tennessee</option>
+												<option value="TX">Texas</option>
+												<option value="UT">Utah</option>
+												<option value="VT">Vermont</option>
+												<option value="VA">Virginia</option>
+												<option value="WA">Washington</option>
+												<option value="WV">West Virginia</option>
+												<option value="WI">Wisconsin</option>
+												<option value="WY">Wyoming</option>
+											</select>
+										</div>
+										<div class="hr hr-dotted"></div>
+										<h4 class="blue smaller">
+											<i class="fa fa-location-arrow light-grey bigger-110"></i>
+											Distance
+										</h4>
+										<div class="search-filter-element">
+											<span>within</span>
+											&nbsp;
+											<div id="slider-range" class="inline"></div>
+											&nbsp;
+											<span>miles</span>
+										</div>
+										<div class="hr hr-dotted hr-24"></div>
+																					
+										<div class="row" >
+											<div class="col-md-12">
+												<h4 class="apjob_heading">Experiance</h4>
+											</div>
+											<div class="col-md-6 apjob_exp">
+												<div>
+													<label>Min</label>
+													<select class="apjob_option">
+													</select>
+												</div>
+											</div>
+											
+											<div class="col-md-6 apjob_exp">
+												<div>
+													<label>Max</label>
+													<select class="apjob_option">
+													</select>
+												</div>
+											</div>
+										</div>										
+										
+										<div class="hr hr-dotted hr-24"></div>
+
+										<div class="text-center">
+											<button type="button" class="btn btn-default btn-round btn-sm btn-white">
+												Reset
+											</button>
+
+											<button type="button" class="btn btn-default btn-round btn-sm btn-white">
+												Update
+											</button>
+										</div>
+
+										<div class="space-4"></div>
+									</div>
+								</div>
+								<div class="space space-6"></div>
+								<span class="grey"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="col-md-7">
+					<div class="apply_box row" >
+						<div class="col-md-12 apply_content1">
+							<h4 class="apjob_heading1">Hiring for electrical engineer Hiring for electrical engineer  Hiring for electrical engineer Hiring for electrical engineer </h4>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="col-md-9 apjob_container">
+								<div class="col-md-12">
+									<div class="col-md-6 apjob_incontainer">
+										<div class="col-md-12 apjob_subcontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-flask"></i></span><br>
+												<span >Experiance</span><br>
+												<span>0-5 years</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-rupee-sign"></i></span><br>
+												<span>Monthly</span><br>
+												<span>8,000-20,000</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 apjob_sec_container">
+										<div class="col-md-12 apjob_sec_incontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fab fa-safari"></i></span><br>
+												<span >Shift Timing</span><br>
+												<span>9 to 6</span>
+											</div>
+											
+											<div class="col-md-6 text-center">
+												<span><i class="far fa-building"></i></span><br>
+												<span >Compony</span><br>
+												<span>ADROIT...</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 apjob_bottom">
+										<div class="col-md-1">
+											<span><i class="fas fa-snowflake"></i></span>
+										</div>
+										<div class="col-md-11">
+											<span>Keyskills-</span>
+											<span>
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+											</span>
+										</div>	
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-1 apjob_inbottom">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<div class="col-md-11 apjob_inbottom">
+											<span> Noida</span>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="apply_box2 row">
+									<div class="row apjob_subbottom">
+										<div class="col-md-12">
+											<span>Posted by Individual<br>
+												07 Feb 2018, 09:29 AM
+											</span>
+										</div>
+										
+										<div class="col-md-12 apjob_subinbottom">
+											<i class="fa fa-check-circle"></i>
+											<span>Phone Verified
+											</span>
+										</div>
+										
+										<div class="col-md-12">
+											<span>
+												<button type="button" class="btn btn-defaul btn-block">Apply</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="apply_inbox row" >
+						<div class="col-md-12 apply_content1">
+							<h4 class="apjob_heading1">Hiring for electrical engineer Hiring for electrical engineer  Hiring for electrical engineer Hiring for electrical engineer </h4>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="col-md-9 apjob_container">
+								<div class="col-md-12">
+									<div class="col-md-6 apjob_incontainer">
+										<div class="col-md-12 apjob_subcontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-flask"></i></span><br>
+												<span >Experiance</span><br>
+												<span>0-5 years</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-rupee-sign"></i></span><br>
+												<span>Monthly</span><br>
+												<span>8,000-20,000</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 apjob_sec_container">
+										<div class="col-md-12 apjob_sec_incontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fab fa-safari"></i></span><br>
+												<span >Shift Timing</span><br>
+												<span>9 to 6</span>
+											</div>
+											
+											<div class="col-md-6 text-center">
+												<span><i class="far fa-building"></i></span><br>
+												<span >Compony</span><br>
+												<span>ADROIT..</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 apjob_bottom">
+										<div class="col-md-1">
+											<span><i class="fas fa-snowflake"></i></span>
+										</div>
+										<div class="col-md-11">
+											<span>Keyskills-</span>
+											<span>
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+											</span>
+										</div>	
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-1 apjob_inbottom">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<div class="col-md-11 apjob_inbottom">
+											<span> Noida</span>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="apply_box2 row">
+									<div class="row apjob_subbottom">
+										<div class="col-md-12">
+											<span>Posted by Individual<br>
+												07 Feb 2018, 09:29 AM
+											</span>
+										</div>
+										
+										<div class="col-md-12 apjob_subinbottom">
+											<i class="fa fa-check-circle"></i>
+											<span>Phone Verified
+											</span>
+										</div>
+										
+										<div class="col-md-12">
+											<span>
+												<button type="button" class="btn btn-default btn-block">Apply</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="apply_inbox row" >
+						<div class="col-md-12 apply_content1">
+							<h4 class="apjob_heading1">Hiring for electrical engineer Hiring for electrical engineer  Hiring for electrical engineer Hiring for electrical engineer </h4>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="col-md-9 apjob_container">
+								<div class="col-md-12">
+									<div class="col-md-6 apjob_incontainer">
+										<div class="col-md-12 apjob_subcontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-flask"></i></span><br>
+												<span >Experiance</span><br>
+												<span>0-5 years</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-rupee-sign"></i></span><br>
+												<span>Monthly</span><br>
+												<span>8,000-20,000</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 apjob_sec_container">
+										<div class="col-md-12 apjob_sec_incontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fab fa-safari"></i></span><br>
+												<span >Shift Timing</span><br>
+												<span>9 to 6</span>
+											</div>
+											
+											<div class="col-md-6 text-center">
+												<span><i class="far fa-building"></i></span><br>
+												<span >Compony</span><br>
+												<span>ADROIT...</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 apjob_bottom">
+										<div class="col-md-1">
+											<span><i class="fas fa-snowflake"></i></span>
+										</div>
+										<div class="col-md-11">
+											<span>Keyskills-</span>
+											<span>
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+											</span>
+										</div>	
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-1 apjob_inbottom">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<div class="col-md-11 apjob_inbottom">
+											<span> Noida</span>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="apply_box2 row">
+									<div class="row apjob_subbottom">
+										<div class="col-md-12">
+											<span>Posted by Individual<br>
+												07 Feb 2018, 09:29 AM
+											</span>
+										</div>
+										
+										<div class="col-md-12 apjob_subinbottom">
+											<i class="fa fa-check-circle"></i>
+											<span>Phone Verified
+											</span>
+										</div>
+										
+										<div class="col-md-12">
+											<span>
+												<button type="button" class="btn btn-default btn-block">Apply</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="apply_inbox row" >
+						<div class="col-md-12 apply_content1">
+							<h4 class="apjob_heading1">Hiring for electrical engineer Hiring for electrical engineer  Hiring for electrical engineer Hiring for electrical engineer </h4>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="col-md-9 apjob_container">
+								<div class="col-md-12">
+									<div class="col-md-6 apjob_incontainer">
+										<div class="col-md-12 apjob_subcontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-flask"></i></span><br>
+												<span >Experiance</span><br>
+												<span>0-5 years</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-rupee-sign"></i></span><br>
+												<span>Monthly</span><br>
+												<span>8,000-20,000</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 apjob_sec_container">
+										<div class="col-md-12 apjob_sec_incontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fab fa-safari"></i></span><br>
+												<span >Shift Timing</span><br>
+												<span>9 to 6</span>
+											</div>
+											
+											<div class="col-md-6 text-center">
+												<span><i class="far fa-building"></i></span><br>
+												<span >Compony</span><br>
+												<span>ADROIT...</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 apjob_bottom">
+										<div class="col-md-1">
+											<span><i class="fas fa-snowflake"></i></span>
+										</div>
+										<div class="col-md-11">
+											<span>Keyskills-</span>
+											<span>
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+											</span>
+										</div>	
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-1 apjob_inbottom">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<div class="col-md-11 apjob_inbottom">
+											<span> Noida</span>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="apply_box2 row">
+									<div class="row apjob_subbottom">
+										<div class="col-md-12">
+											<span>Posted by Individual<br>
+												07 Feb 2018, 09:29 AM
+											</span>
+										</div>
+										
+										<div class="col-md-12 apjob_subinbottom">
+											<i class="fa fa-check-circle"></i>
+											<span>Phone Verified
+											</span>
+										</div>
+										
+										<div class="col-md-12">
+											<span>
+												<button type="button" class="btn btn-default btn-block">Apply</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="apply_inbox row" >
+						<div class="col-md-12 apply_content1">
+							<h4 class="apjob_heading1">Hiring for electrical engineer Hiring for electrical engineer  Hiring for electrical engineer Hiring for electrical engineer </h4>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="col-md-9 apjob_container">
+								<div class="col-md-12">
+									<div class="col-md-6 apjob_incontainer">
+										<div class="col-md-12 apjob_subcontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-flask"></i></span><br>
+												<span >Experiance</span><br>
+												<span>0-5 years</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-rupee-sign"></i></span><br>
+												<span>Monthly</span><br>
+												<span>8,000-20,000</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 apjob_sec_container">
+										<div class="col-md-12 apjob_sec_incontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fab fa-safari"></i></span><br>
+												<span >Shift Timing</span><br>
+												<span>9 to 6</span>
+											</div>
+											
+											<div class="col-md-6 text-center">
+												<span><i class="far fa-building"></i></span><br>
+												<span >Compony</span><br>
+												<span>ADROIT...</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 apjob_bottom">
+										<div class="col-md-1">
+											<span><i class="fas fa-snowflake"></i></span>
+										</div>
+										<div class="col-md-11">
+											<span>Keyskills-</span>
+											<span>
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+											</span>
+										</div>	
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-1 apjob_inbottom">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<div class="col-md-11 apjob_inbottom">
+											<span> Noida</span>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="apply_box2 row">
+									<div class="row apjob_subbottom">
+										<div class="col-md-12">
+											<span>Posted by Individual<br>
+												07 Feb 2018, 09:29 AM
+											</span>
+										</div>
+										
+										<div class="col-md-12 apjob_subinbottom">
+											<i class="fa fa-check-circle"></i>
+											<span>Phone Verified
+											</span>
+										</div>
+										
+										<div class="col-md-12">
+											<span>
+												<button type="button" class="btn btn-default btn-block">Apply</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 sticky text-center">
+					<div class="apjob_add">
+						<img src="image/ADD.jpg" alt="Mountain View" width="180">
+					</div>
+					
+					<div>
+						<img src="image/add1.jpg" alt="Mountain View" width="180">
+					</div>
+					
+					<div>
+						<img src="image/addfirst.jpg" alt="Mountain View" width="180">
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="row text-left">
+		<div class="post-footer" >
+			<ul class="list-inline registerexexp_ul">
+				<li class="border-register"><a href="#" class="apjob_link">About US</a>
+				</li>
+				<li class="border-register"><a href="#" class="apjob_link">Privacy</a>
+				</li>
+				<li class="border-register"><a href="#" class="apjob_link"> Secuirty</a>
+				</li>
+				<li class="border-register"><a href="#" class="apjob_link">Terms&condition</a>
+				</li>
+				<li class="registerexexp_social">
+					<span>Follow Us on&nbsp;</span>
+						<a href="#"><span><img src="image/facebook_circle-512.png" alt="fb_img" class="register_fb"></span></a>
+						<a href="#" class="fab fa-twitter register_twiet"></a>
+						<a href="#" class="fab fa-google register_google"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- basic scripts -->
+
+	<script src="ACE/assets/js/jquery-2.1.4.min.js"></script>
+
+	<script>
+		if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+	</script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- page specific plugin scripts -->
+	<script src="assets/js/tree.min.js"></script>
+	<script src="assets/js/select2.min.js"></script>
+	<script src="assets/js/jquery-ui.custom.min.js"></script>
+	<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+	<script src="assets/js/holder.min.js"></script>
+
+	<!-- ace scripts -->
+	<script src="assets/js/ace-elements.min.js"></script>
+	<script src="assets/js/ace.min.js"></script>
+
+	<!-- inline scripts related to this page -->
+	<script>
+	jQuery(function($) {
+	
+		//data for tree element
+		var category = {
+			'for-sale' : {text: 'For Sale', type: 'folder'}	,
+			'vehicles' : {text: 'Vehicles', type: 'item'}	,
+			'rentals' : {text: 'Rentals', type: 'item'}	,
+			'real-estate' : {text: 'Real Estate', type: 'item'}	,
+			'pets' : {text: 'Pets', type: 'item'}	,
+			'tickets' : {text: 'Tickets', type: 'item'}
+		}
+		category['for-sale']['additionalParameters'] = {
+			'children' : {
+				'appliances' : {text: 'Appliances', type: 'item'},
+				'arts-crafts' : {text: 'Arts & Crafts', type: 'item'},
+				'clothing' : {text: 'Clothing', type: 'item'},
+				'computers' : {text: 'Computers', type: 'item'},
+				'jewelry' : {text: 'Jewelry', type: 'item'},
+				'office-business' : {text: 'Office', type: 'item'},
+				'sports-fitness' : {text: 'Sports & Fitness', type: 'item'}
+			}
+		}
+		
+		var dataSource1 = function(options, callback){
+			var $data = null
+			if(!("text" in options) && !("type" in options)){
+				$data = category;//the root tree
+				callback({ data: $data });
+				return;
+			}
+			else if("type" in options && options.type == "folder") {
+				if("additionalParameters" in options && "children" in options.additionalParameters)
+					$data = options.additionalParameters.children || {};
+				else $data = {}//no data
+			}
+			
+			callback({ data: $data })
+		}
+		
+		$('#cat-tree').ace_tree({
+			dataSource: dataSource1,
+			multiSelect: true,
+			cacheItems: true,
+			'open-icon' : 'ace-icon tree-minus',
+			'close-icon' : 'ace-icon tree-plus',
+			'itemSelect' : true,
+			'folderSelect': false,
+			'selected-icon' : 'ace-icon fa fa-check',
+			'unselected-icon' : 'ace-icon fa fa-times',
+			loadingHTML : '<div class="tree-loading"><i class="ace-icon fa fa-refresh fa-spin blue"></i></div>'
+		});
+		
+	
+		$('.tree-container').ace_scroll({size: 250, mouseWheelLock: true});
+		$('#cat-tree').on('closed.fu.tree disclosedFolder.fu.tree', function() {
+			$('.tree-container').ace_scroll('reset').ace_scroll('start');	
+		});
+		
+		//select2 location element
+		$('.select2').css('min-width', '150px').select2({allowClear:true});
+		
+		//jQuery ui distance slider
+		$( "#slider-range" ).css('width','150px').slider({
+			range: true,
+			min: 0,
+			max: 100,
+			values: [ 17, 67 ],
+			slide: function( event, ui ) {
+				var val = ui.values[$(ui.handle).index()-1] + "";
+	
+				if( !ui.handle.firstChild ) {
+					$("<div class='tooltip bottom in' style='display:none;left:-6px;top:14px;'><div class='tooltip-arrow'></div><div class='tooltip-inner'></div></div>")
+					.prependTo(ui.handle);
+				}
+				$(ui.handle.firstChild).show().children().eq(1).text(val);
+			}
+		}).find('span.ui-slider-handle').on('blur', function(){
+			$(this.firstChild).hide();
+		});
+		
+	
+		//this is for demo only
+		$('.thumbnail').on('mouseenter', function() {
+			$(this).find('.info-label').addClass('label-primary');
+		}).on('mouseleave', function() {
+			$(this).find('.info-label').removeClass('label-primary');
+		});
+		
+	
+		//toggle display format buttons
+		$('#toggle-result-format .btn').tooltip({container: 'body'}).on('click', function(e){
+			$(this).siblings().each(function() {
+				$(this).removeClass($(this).attr('data-class')).addClass('btn-grey');
+			});
+			$(this).removeClass('btn-grey').addClass($(this).attr('data-class'));
+		});
+		
+		////////////////////
+		//show different search page
+		$('#toggle-result-page .btn').on('click', function(e){
+			var target = $(this).find('input[type=radio]');
+			var which = parseInt(target.val());
+			$('.search-page').parent().addClass('hide');
+			$('#search-page-'+which).parent().removeClass('hide');
+		});
+	});
+	</script>
+		
+	<script>
+		function myFunction() {
+			var input, filter, ul, li, a, i;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			ul = document.getElementById("myUL");
+			li = ul.getElementsByTagName("li");
+			for (i = 0; i < li.length; i++) {
+				a = li[i].getElementsByTagName("a")[0];
+				if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+					li[i].style.display = "";
+				} else {
+					li[i].style.display = "none";
+
+				}
+			}
+		}
+	</script>
+</body>
+</html>				

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>applyjobseeker</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- page specific plugin styles -->
+		<link rel="stylesheet" href="ACE/assets/css/select2.min.css" />
+		<link rel="stylesheet" href="ACE/assets/css/jquery-ui.custom.min.css" />
+			<link rel="stylesheet" type="text/css" href="seejob.css">
+		<!-- text fonts -->
+		<link rel="stylesheet" href="ACE/assets/css/fonts.googleapis.com.css" />
+		<!-- ace styles -->
+		<link rel="stylesheet" href="ACE/assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-" />
+		<link rel="stylesheet" href="ACE/assets/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="ACE/assets/css/ace-rtl.min.css" />
+		<script src="ACE/assets/js/ace-extra.min.js"></script>
+		<script src="js/3.2.1-jquery.min.js"></script>
+		<script src="js/3.3.7-js-bootstrap.min.js"></script>
+		<script defer src="js/fontawesome.com.js"></script>
+		<meta name="description" content="" />
+		
+		<style>
+			.buy-header{
+			}
+			@media screen and (max-width:768px) {
+				.buy-header{
+				   margin-top:175px;
+				
+				  
+				}
+			}
+			.employe_menu {
+			}
+			@media screen and (max-width: 450px) {
+				.employe_menu {
+				  text-align:center;
+	
+				}
+			}
+			.employer_exp {
+			}
+			@media screen and (max-width: 450px) {
+				.employer_exp{
+				  padding-right:40px;
+	
+				}
+			}
+			.employer_brand{
+			}
+			@media screen and (max-width: 450px) {
+				.employer_brand{
+				  margin-left:50px;
+	
+				}
+			}
+				.employe_btn{
+			}
+			@media screen and (max-width: 450px) {
+				.employe_btn{
+				  margin-right:50px;
+				  
+	
+				}
+			}
+			
+		</style>
+	</head>
+<body class="no-skin">
+	<div class="container-fluid">
+		<nav class="navbar navbar-default navbar-fixed-top buy_bgcolor">
+			<div class="container-nav">
+				<div class="row employe_menu text-center">
+					<div class="col-md-4">
+						<a class="navbar-brand employer_brand" href="index.html">
+							<img src="image/seelogo.png" alt="Obaju logo">
+						</a>
+					</div>
+					<div class="col-md-3">
+						<form class="example employer_exp" action="/action_page.php">
+							<input type="text" placeholder="Search.." name="search2">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+					<div class="col-md-3 col-md-offset-2 buy_btn">
+						<a href="Postjobpage.html" class="btn btn-info " role="button" >Post for free </a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="buy-header">
+			<h3 class="buy_heading">
+				<i class="ace-icon fa fa-angle-double-right"></i>
+				Select payment type
+			</h3>
+		</div>
+
+		<div class="row emplyer_align ">
+			<div class="col-xs-12">
+				<!-- PAGE CONTENT BEGINS -->
+				<div class="tabbable">
+					<ul class="nav nav-tabs buy_tab">
+						<li class="active">
+							<a data-toggle="tab" href="#Card_Detail">Credit / Debit Card</a>
+						</li>
+						<li>
+							<a data-toggle="tab" href="#Net_Banking">Net Banking</a>
+						</li>
+						<li>
+							<a data-toggle="tab" href="#Add_Credit">Add Credit</a>
+						</li>
+						<li>
+							<a data-toggle="tab" href="#Wallet">Wallet</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div id="Card_Detail" class="tab-pane fade in active">
+							<div class="panel panel-default">
+									<div class="panel-heading">
+										<a href="#faq-1-1" data-parent="#faq-list-1" data-toggle="collapse" class="accordion-toggle collapsed buy_a">
+											<i class="ace-icon fa fa-user bigger-130"></i>
+											&nbsp; Enter Detaile
+										</a>
+									</div>
+
+									<div class="panel-collapse collapse" id="faq-1-1">
+										<div class="panel-body">
+											<div class="col-sm-6 col-md-offset-3 buy_input">
+												<input type="text" class="form-control " placeholder="Enter Name" name="name">
+											</div>
+											<div class="col-sm-6 col-md-offset-3 buy_input">
+												<input type="text" class="form-control" placeholder="Enter card detaile" name="name">
+											</div>
+											<div class="col-sm-6 col-md-offset-3 buy_input">
+												<input type="text" class="form-control"  placeholder="Expiry &nbsp;(MM/YY)" name="name">
+											</div>
+											<div class="col-sm-6 col-md-offset-3 buy_input">
+												<input type="text" class="form-control " placeholder="CVV" name="name">
+											</div>
+											<div class="col-sm-6 col-md-offset-3 buy_input text_left">
+												<input type="checkbox">&nbsp;Save Card For Faster Payment
+											</div>
+											<div class="col-sm-6 col-md-offset-3 index_footer text-center">
+												<a href="#" class="btn btn-info option_link buy_a" role="button">Pay Now</a>
+											</div>
+										</div>
+									</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<a href="#faq-1-2" data-parent="#faq-list-1" data-toggle="collapse" class="accordion-toggle collapsed buy_a">
+											<i class="fas fa-newspaper"></i>
+											&nbsp; Order Summary
+										</a>
+									</div>
+
+									<div class="panel-collapse collapse " id="faq-1-2">
+										<div class="panel-body">
+											<div id="faq-list-nested-1" class="panel-group accordion-style1 accordion-style2">
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<a href="#faq-list-1-sub-1" data-parent="#faq-list-nested-1" data-toggle="collapse" class="accordion-toggle collapsed buy_a">
+															PremiumAd
+														</a>
+													</div>
+												</div>
+
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<a href="#faq-list-1-sub-2" data-parent="#faq-list-nested-1" data-toggle="collapse" class="accordion-toggle collapsed">
+																Total amount   (Incl. of taxes)
+														</a>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<a href="#faq-list-1-sub-3" data-parent="#faq-list-nested-1" data-toggle="collapse" class="accordion-toggle collapsed buy_a btn btn-info">
+													Please fill GST detail&nbsp; 
+													</a>
+												</div>
+
+												<div class="panel-collapse collapse" id="faq-list-1-sub-3">
+													<div class="panel-body">
+														<div class="col-sm-6 col-md-offset-3 buy_input">
+															<input type="text" class="form-control " placeholder="GST number" name="name">
+														</div>
+														<div class="col-sm-6 col-md-offset-3 buy_input">
+															<input type="text" class="form-control" placeholder="Location" name="name">
+														</div>
+														<div class="col-sm-6 col-md-offset-3 buy_input">
+															<input type="text" class="form-control"  placeholder="Address" name="name">
+														</div>
+														<div class="col-sm-6 col-md-offset-3 buy_input text-center">
+															<a href="#.html" class="btn btn-info" role="button">Submit </a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<a href="#faq-list-1-sub-6" data-parent="#faq-list-nested-1" data-toggle="collapse" class="accordion-toggle collapsed buy_a btn btn-info">
+															Enter Coupon Code&nbsp; 
+													</a>
+												</div>
+
+												<div class="panel-collapse collapse" id="faq-list-1-sub-6">
+													<div class="panel-body">
+														<div class="col-sm-6 col-md-offset-3 buy_input">
+															<input type="text" class="form-control " placeholder="code" name="name">
+															<input type="button" class="form-control btn-primary buy_color" value="apply" name="name">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="Net_Banking" class="tab-pane fade ">
+						  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Select from popular net banking</button>
+							  <div id="demo" class="collapse logo buy_net ">
+								<div class="row">
+									<h3 class="buy_wallet_h">Select your bank</h3><br>
+									<div class="row logo_box">
+										<div class="col-md-4">
+											<input type="radio" name="citizenship" />
+											<img src="image/hdfc_logo.png" alt="hdfc_logo" width="100">
+										</div>
+										<div class="col-md-4">
+											<input type="radio" name="citizenship" />
+											<img src="image/axis_icon.png" alt="hdfc_logo" width="100">
+										</div>
+										<div class="col-md-4">
+											<input type="radio" name="citizenship" />
+											<img src="image/kotak_icon.jpg" alt="logo" width="100">
+										</div>
+									</div>
+									<div class="row logo_box">
+										<div class="col-md-4">
+											<input type="radio" name="citizenship" />
+											<img src="image/icic_icon.jpg" alt="hdfc_logo" width="100">
+										</div>
+										<div class="col-md-4">
+											<input type="radio" name="citizenship" />
+											<img src="image/state_logo.jpg" alt="hdfc_logo" width="100">
+										</div>
+										<div class="col-md-4">
+											<input type="radio" name="citizenship" />
+											<img src="image/city_icon.jpg" alt="logo" width="100">
+										</div>
+										</div><br>
+									<div class="col-md-12">
+										<a href="#" class="btn btn-primary" role="button">Submit</a>
+									</div>
+								</div>
+							  </div>
+						</div>
+						<div id="Add_Credit" class="tab-pane fade text-left buy_para">
+							<p>You do not have enough Ad Credit. <span class="buy_insidepara">Click here to purchase</span></p>
+							<p>You do not have enough Ad Credit .Click here to purchase</p>
+							<p>You do not have enough Ad Credit .Click here to purchase<br> You do not have enough Ad Credit</p>
+						</div>
+						
+						<div id="Wallet" class="tab-pane fade buy_wallet">
+							<div class="row">
+								<h3 class="buy_wallet_h">Select your wallet</h3><br>
+								<div class="row logo_box">
+									<div class="col-md-4">
+										<input type="radio" name="citizenship" />
+										<img src="image/hdfc_logo.png" alt="hdfc_logo" width="100">
+									</div>
+									<div class="col-md-4">
+										<input type="radio" name="citizenship" />
+										<img src="image/axis_icon.png" alt="hdfc_logo" width="100">
+									</div>
+									<div class="col-md-4">
+										<input type="radio" name="citizenship" />
+										<img src="image/kotak_icon.jpg" alt="logo" width="100">
+									</div>
+								</div>
+								<div class="row logo_box">
+									<div class="col-md-4">
+										<input type="radio" name="citizenship" />
+										<img src="image/icic_icon.jpg" alt="hdfc_logo" width="100">
+									</div>
+									<div class="col-md-4">
+										<input type="radio" name="citizenship" />
+										<img src="image/state_logo.jpg" alt="hdfc_logo" width="100">
+									</div>
+									<div class="col-md-4">
+										<input type="radio" name="citizenship" />
+										<img src="image/city_icon.jpg" alt="logo" width="100">
+									</div>
+								</div><br>
+								<div class="col-md-12">
+									<a href="#" class="btn btn-primary" role="button">Submit</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Employer-update-profile</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="canonical" href=""/>
+		<meta charset="UTF-8" /> 
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<meta name="description" content=""/>
+		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+		<meta name="google-site-verification" content="" />
+		<meta name="keywords" content=""/>
+		<meta http-equiv="Content-Language" content="en-us" > 
+		<meta name="revisit-after" content="1 days" > 
+		<meta name="RATING" content="General" > 
+		<link rel="stylesheet" href="css/w3.css"><link rel="stylesheet" href="socicon/social_media.css">
+		<link rel="stylesheet" href="socicon/social_media.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<!-- Latest compiled JavaScript -->
+		<link rel="stylesheet" type="text/css" href="seejob.css">
+		<script defer src="js/fontawesome.com.js"></script>
+		
+		<!-- include libraries(jQuery, bootstrap) -->
+		
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+
+		<!-- include summernote css/js -->
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+		
+	
+	<style>
+		* {
+    box-sizing: border-box;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 0px 10px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    resize: vertical;
+}
+label {
+     padding: 0px 10px;
+    display: inline-block;
+}
+input[type=submit] {
+    background-color: #2196F3;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.col-25 {
+    float: left;
+    width: 40%;
+    margin-top: 6px;
+	text-align:right;
+	font-size:11px;
+}
+.col-75 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+	font-size:11px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.area3
+{
+width:100%;
+height:200px;
+
+}
+
+@media only screen and (max-width:425px) {
+    area3 {
+        background-color: lightblue;
+    }
+}
+
+	</style>
+	</head>
+	
+<body>
+<div class="">
+		<ul class="list-inline index_ul" style="background-color:black;">
+			<li>
+			 <a href="#" class="index-a">
+				<span><i class="fas fa-phone-volume"></i>&nbsp;</span>9999639876
+			 </a>
+			</li>
+			<li>
+				<a href="#" class="index-a">
+					<span><i class="fas fa-envelope"></i>&nbsp; </span>sale@seejob.in
+				</a>
+			</li>
+			<li>
+				<a href="#" class="index-a">
+					<span><i class="fas fa-comments"></i>&nbsp; </span>Live Chat (10 am to 7 pm)
+				</a>
+			</li>
+		</ul>
+	<!-- main header -->
+
+	<nav class="navbar navbar-default megamenu sticky" style="z-index:1;">
+	  <div class="container-fluid">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	          <span class="sr-only">Toggle navigation</span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="index.php"><img src="image/seelogo.png" alt="logo" width="150"></a>
+	      </div>
+
+	      <!-- Collect the nav links, forms, and other content for toggling -->
+	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	        <ul class="nav navbar-nav">
+	          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+	          <li><a href="#">Link</a></li>
+	          <li class="dropdown megamenu-fw">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mega Menu <span class="caret"></span></a>
+	            <ul class="dropdown-menu megamenu-content" role="menu">
+	              	<li>
+					    <div class="row">
+					        <div class="col-sm-4">
+					      		<h3 class="title">Featured Products</h3>
+								
+								<div data-ride="carousel" class="carousel slide" id="myCarousel">
+	                              <div class="carousel-inner">
+	                                <div class="item active left">
+	                                    <a href="#"><img alt="product 1" class="img-responsive" src="http://placehold.it/350x200/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+	                                    <h4><small>Featured Product 1</small></h4>                                        
+	                                    <button type="button" class="btn btn-default" href="#"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
+	                                </div><!-- End Item -->
+	                                <div class="item next left">
+	                                    <a href="#"><img alt="product 2" class="img-responsive" src="http://placehold.it/350x200/ef5e55/f5f5f5/&amp;text=Featured+Product"></a>
+	                                    <h4><small>Featured Product 2</small></h4>                                        
+	                                    <button type="button" class="btn btn-default" href="#"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
+	                                </div><!-- End Item -->
+	                                <div class="item">
+	                                    <a href="#"><img alt="product 3" class="img-responsive" src="http://placehold.it/350x200/2ecc71/f5f5f5/&amp;text=Featured+Product"></a>
+	                                    <h4><small>Featured Product 3</small></h4>                                        
+	                                    <button type="button" class="btn btn-default" href="#"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
+	                                </div><!-- End Item -->                                
+	                              </div><!-- End Carousel Inner -->
+	                            </div>
+					        </div><!-- end col-4 -->
+					        <div class="col-sm-4">
+					      		<h3 class="title">Latest Tutorials</h3>
+					            <ul class="media-list">
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">How To Master Fireworks’ CSS Properties Panel And CSS Professionalzr</a></p>
+					                    </div>
+					                </li>
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/ef5e55/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">Making A Complete Polyfill For The HTML5 Details Element</a></p>
+					                    </div>
+					                </li>
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/2ecc71/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">Creating A “Save For Later” Chrome Extension With Modern Web Tools</a></p>
+					                    </div>
+					                </li>
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">Scaling Down The BEM Methodology For Small Projects</a></p>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div><!-- end col-4 -->
+					        <div class="col-sm-4">
+					      		<h3 class="title">Google Map</h3>
+					      			<iframe width="340" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://my.ctrlq.org/maps/#roadmap|10|41.001769314909254|-74.88742636132815"></iframe>
+					        </div><!-- end col-4 -->
+					    </div><!-- end row -->
+					    <hr>
+					    <div class="row">
+					    	<div class="col-sm-6">
+					      		<h3 class="title">About Us</h3>
+					        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					        </div><!-- end col-6 -->
+					    	<div class="col-sm-3">
+					      		<h3 class="title">Follow Us</h3>
+					        	<p></p>
+					        </div><!-- end col-3 -->
+					    	<div class="col-sm-3">
+					      		<h3 class="title">Subscribe</h3>
+					        	<form class="navbar-form nopadding" method="post" action="">
+									<input type="text" class="form-control" placeholder="Enter email" name="email">
+									<input type="submit" value="Go" class="btn btn-primary">
+								</form>   
+					   		</div>               
+					    </div>
+					</li>
+	            </ul>
+	          </li>
+	          <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-image"></i> Gallery <span class="caret"></span></a>
+	            <ul class="dropdown-menu" role="menu">
+	              <li><a href="#">Action</a></li>
+	              <li><a href="#">Another action</a></li>
+	              <li><a href="#">Something else here</a></li>
+	              <li class="divider"></li>
+	              <li><a href="#">Separated link</a></li>
+	              <li class="divider"></li>
+	              <li><a href="#">One more separated link</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	        <form class="navbar-form navbar-left" role="search">
+	          <div class="form-group">
+	            <input type="text" class="form-control" placeholder="Search">
+	          </div>
+	          <button type="submit" class="btn btn-default">Submit</button>
+	        </form>
+	        <ul class="nav navbar-nav navbar-right">
+	          <li><a href="#">Link</a></li>
+	          <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	            <ul class="dropdown-menu" role="menu">
+	              <li><a href="#">Action</a></li>
+	              <li><a href="#">Another action</a></li>
+	              <li><a href="#">Something else here</a></li>
+	              <li class="divider"></li>
+	              <li><a href="#">Separated link</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	      </div><!-- /.navbar-collapse -->
+	  </div>
+	</nav>	
+	
+	<!-- Menu -->
+
+	<div class="container" style="margin-bottom:20px;">
+		<div class="row emplyer_align profile_row apply_box">
+			<div class="col-md-9">
+				<div class="">
+					<h2 class="text-center">Add Compony Form</h2>
+					<hr>
+					<form action="#">
+						<div class="row">
+							<div class="col-md-3">
+								<div>
+									<label for="name">Company's name:</label>
+								</div>
+							</div>
+							<div class="col-md-9">
+								<input type="name" class="" id="name" placeholder="Enter name" name="name" style="width:100%;margin:5px;background-color:#f8f8f8;padding:10px;border:none;">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<div>
+									<label for="email">Company's email-id:</label>
+								</div>
+							</div>
+							<div class="col-md-9">
+								<input type="email" class="" id="email" placeholder="Enter email" name="email" style="width:100%;margin:5px;background-color:#f8f8f8;padding:10px;border:none;">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<div>
+									<label for="name">Company's add:</label>
+								</div>
+							</div>
+							<div class="col-md-9">
+								<input type="address" id="add" placeholder="Enter address" name="add" style="width:100%;margin:5px;background-color:#f8f8f8;padding:10px;border:none;">
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-3">
+									<label for="name">Company's logo:</label>
+							</div>
+							<div class="col-md-9">
+								<div id="dropContainer" style="width:100%;height:150px;margin:5px;background-color:#f8f8f8;padding:10px;border:none;">
+								   <center><span style="color:lightgray;font-size:40px;"><i class="fas fa-upload"></i> <br>Drop Here</span></center>
+								</div>
+								  Should update here:
+								  <input type="file" id="fileInput" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<label for="name">Description:</label>
+							</div>
+							<div class="col-md-9" style="margin-top:10px; z-index: 1;">
+								<form method="post">
+									 <textarea id="summernote" name="editordata"></textarea>
+								</form>
+							</div>
+						</div>
+					</form>
+				</div>	
+			</div>
+		
+			<div class="col-md-3" >
+				<h2 class="text-center">Compony logo</h2>
+				<hr>
+				<div class="col-md-12" >
+					<div class="">
+						<img src="image/banner_job2.jpg" alt="img" width="100%;" height="100px;" style="border:1px solid lightgray;margin:2px;" onclick="document.getElementById('c_detail').style.display='block'">
+						<img src="image/headerbanner.jpg" alt="img" width="100%;" height="100px;" style="border:1px solid lightgray;margin:2px;" onclick="document.getElementById('c2_detail').style.display='block'">
+						<img src="image/icic_icon.jpg" alt="img" width="100%;" height="100px;" style="border:1px solid lightgray;margin:2px;" onclick="document.getElementById('c3_detail').style.display='block'">
+					</div>
+				</div>
+			</div>
+			<div id="c_detail" class="w3-modal w3-animate-opacity">
+				<div class="w3-modal-content w3-card-4" style="border:2px solid #2e6da4;">
+				  <header class="w3-container"> 
+					<span onclick="document.getElementById('c_detail').style.display='none'" 
+					class="w3-button w3-large w3-display-topright">&times;</span>
+					<h2 class="apply-heading"></h2>
+				  </header>
+				  <div class="w3-container description_box">
+					<h2 class="text-center">Company detail</h2>
+					<hr>
+					<h4>Company's name:</h4>
+					<h4>Company's add:<h4>
+					<h4 class="description">Job Description</h4>
+					<hr>
+					<p>I wish to work in an organization that can provide me knowledge and provide space to learn and gain experience in the field of Web Promotion and web development. I aim to capitalize on these experiences to drive my career forward.</p>							
+					<hr>
+					<h5 class="option_exp"><span class="description"><b>Job Type:</b></span> Full time</h5>
+					<h5 class="option_exp"><span class="description"><b>Salary:</b></span> ₹10,000.00 to ₹15,000.00 /month</h5>
+					<h5  class="option_exp"><span class="description"><b>Work experiance :</b></span>0-1 years</h5>
+					<h5 class="option_exp"><span class="description"><b>Shift Timing:</b></span> 9 to 6</h5>
+				  </div>
+				  
+				</div>
+			</div>
+			<div id="c2_detail" class="w3-modal w3-animate-opacity">
+				<div class="w3-modal-content w3-card-4" style="border:2px solid #2e6da4;">
+				  <header class="w3-container"> 
+					<span onclick="document.getElementById('c2_detail').style.display='none'" 
+					class="w3-button w3-large w3-display-topright">&times;</span>
+					<h2 class="apply-heading"></h2>
+				  </header>
+				  <div class="w3-container description_box">
+				  <h4>Content writer</h4>
+					<h4>Solve Zone Inc – Noida, Uttar Pradesh<h4>
+					<hr>
+					<h4 class="description">Job Description</h4>
+					<hr>
+					<p>I wish to work in an organization that can provide me knowledge and provide space to learn and gain experience in the field of Web Promotion and web development. I aim to capitalize on these experiences to drive my career forward.</p>							
+					<h5 class="option_exp"><span class="description"><b>Job Type:</b></span> Full time</h5>
+					<h5 class="option_exp"><span class="description"><b>Salary:</b></span> ₹10,000.00 to ₹15,000.00 /month</h5>
+					<h5  class="option_exp"><span class="description"><b>Work experiance :</b></span>0-1 years</h5>
+					<h5 class="option_exp"><span class="description"><b>Shift Timing:</b></span> 9 to 6</h5>
+				  </div>
+				</div>
+			</div>
+			<div id="c3_detail" class="w3-modal w3-animate-opacity">
+				<div class="w3-modal-content w3-card-4" style="border:2px solid #2e6da4;">
+				  <header class="w3-container"> 
+					<span onclick="document.getElementById('c3_detail').style.display='none'" 
+					class="w3-button w3-large w3-display-topright">&times;</span>
+					<h2 class="apply-heading"></h2>
+				  </header>
+				  <div class="w3-container description_box">
+				  <h4>Content writer</h4>
+					<h4>Solve Zone Inc – Noida, Uttar Pradesh<h4>
+					<hr>
+					<h4 class="description">Job Description</h4>
+					<hr>
+					<p>I wish to work in an organization that can provide me knowledge and provide space to learn and gain experience in the field of Web Promotion and web development. I aim to capitalize on these experiences to drive my career forward.</p>							
+					<h5 class="option_exp"><span class="description"><b>Job Type:</b></span> Full time</h5>
+					<h5 class="option_exp"><span class="description"><b>Salary:</b></span> ₹10,000.00 to ₹15,000.00 /month</h5>
+					<h5  class="option_exp"><span class="description"><b>Work experiance :</b></span>0-1 years</h5>
+					<h5 class="option_exp"><span class="description"><b>Shift Timing:</b></span> 9 to 6</h5>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Footer-->
+	<div class="text-left" style="background-color:#000;">
+		<div class="col-md-3" >
+		  <ul class="f_list f_list index_footul">
+			<li class="footer_heading">Information</li>
+			<li><a href="index.php" class="footer_content">About Us</a></li>
+			<li><a href="login.php"  class="footer_content">Terms&Conditions</a></li>
+			<li><a href="login.php"  class="footer_content">Privacy Policy</a></li>
+			<li><a href="about.php"  class="footer_content">Careers with Us</a></li>
+			<li><a href="login.php"  class="footer_content">Contact Us</a></li>
+			<li><a href="login.php"  class="footer_content">Fraud Alert</a></li>
+			<li><a href="about.php"  class="footer_content">FAQs</a></li>
+			<li><a href="index.php"  class="footer_content">Summons / Notices</a></li>
+		  </ul>
+		</div>
+
+		<div class="col-md-3">
+			<ul class="f_list f_list index_footul">
+			<li class="footer_heading">Job Seeker</li>
+				<li><a href="index.php" class="footer_content">Resume Writing</a></li>
+				<li><a href="login.php"  class="footer_content">Resume Display </a></li>
+				<li><a href="login.php"  class="footer_content">Resume Forwording</a></li>
+				<li><a href="about.php"  class="footer_content">Connect to Recruiter</a></li>
+				<li><a href="login.php"  class="footer_content">Cover Letter</a></li>
+				<li><a href="login.php"  class="footer_content">Job Search </a></li>
+			</ul>
+		</div>
+
+		<div class="col-md-3">
+			<ul class="f_list f_list index_footul">
+				<li class="footer_heading">Employer Zone</li>
+				<li><a href="index.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Post Jobs</a></li>
+				<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Find CV </a></li>
+				<form class="example employer_exp" action="/action_page.php">
+					<div> 
+						<h4 class="index_news">Subscribe Our Newsletter</h4>
+						<input type="text" placeholder="Enter your email-id" name="search2" style="background-color:#fff; padding:5px; width:70%">
+						<button type="submit" style="background: -webkit-linear-gradient(top,#f8e3ad,#eeba37); padding:7px;"><i class="fas fa-envelope"></i></button>
+					</div>
+				</form>
+			</ul>
+		</div>
+		  
+		<div class="col-md-3 ">
+			<ul class="f_list f_list index_footul">
+				<li class="footer_heading">Contact Us</li>
+				<li>
+					<div class="col-sm-6 index_footer">
+						<input type="text" class="form-control " placeholder="Enter Name" name="name" style="background-color:#fff;">
+					</div>
+					<div class="col-sm-6 index_footer">
+						<input type="email" class="form-control " placeholder="Enter email" name="Name" style="background-color:#fff;">
+					</div>
+					<!-- <div class="col-sm-12 index_footer"> -->
+						<!-- <textarea class="form-control " rows="5" id="comment" placeholder="Type your msg..." style="background-color:#fff;"></textarea> -->
+					<!-- </div> -->
+					<div class="text-center">
+						<button type="button" class="btn btn-warning btn-block">Submit</button>
+					</div>
+					<div class="">
+						<ul class="soc index_social text-center">
+							<li><a class="soc-twitter" href="#" target="_blank"></a></li>
+							<li><a class="soc-facebook" href="#" target="_blank"></a></li>
+							<li><a class="soc-googleplus" href="#" target="_blank"></a></li>
+							<li><a class="soc-linkedin" href="#" target="_blank"></a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div style="padding:10px;text-align:center;color:#fff;border:0px solid #fff;">©2018 Seejob.com. All Rights Reserved.</div>
+	</div>
+	<!--Footer-->
+	
+	
+	<script>
+		$(document).ready(function(){
+			dropContainer.ondragover = dropContainer.ondragenter = function(evt) {
+		  evt.preventDefault();
+		};
+
+		dropContainer.ondrop = function(evt) {
+		  // pretty simple -- but not for IE :(
+		  fileInput.files = evt.dataTransfer.files;
+		  evt.preventDefault();
+		};
+			});
+	</script>
+	<script>
+		$(document).ready(function(){
+				$(document).ready(function() {
+				  $('#summernote').summernote();
+				});
+			});
+	</script>
+
+	<script>
+		$(document).ready(function(){
+			$(".nav-tabs a").click(function(){
+				$(this).tab('show');
+			});
+		});
+		jQuery(document).ready(function(){
+			$(".dropdown").hover(
+				function() { $('.dropdown-menu', this).fadeIn("fast");
+				},
+				function() { $('.dropdown-menu', this).fadeOut("fast");
+			});
+		});
+	</script>
+</body>
+</html>

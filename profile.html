@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>Job</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="canonical" href=""/>
+		<meta charset="UTF-8" /> 
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<meta name="description" content=""/>
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="google-site-verification" content="" />
+		<meta name="keywords" content=""/>
+		<meta http-equiv="Content-Language" content="en-us" > 
+		<meta name="revisit-after" content="1 days" > 
+		<meta name="RATING" content="General" > 
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="socicon/social_media.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="seejob.css">
+		<!-- page specific plugin styles -->
+		<script src="js/3.2.1-jquery.min.js"></script>
+		<script src="js/3.3.7-js-bootstrap.min.js"></script>
+		<script defer src="js/fontawesome.com.js"></script>
+		
+		<style>
+		.heding_color
+		{
+		margin-top:-20px;
+		background-image:url(image/bannerh.jpg);
+		width:100%;
+		height:100px;
+		}
+		/*filter code*/
+    	.behclick-panel  .list-group {
+    		margin-bottom: 0px;
+		}
+		.behclick-panel .list-group-item:first-child {
+			border-top-left-radius:0px;
+			border-top-right-radius:0px;
+		}
+		.behclick-panel .list-group-item {
+			border-right:0px;
+			border-left:0px;
+		}
+		.behclick-panel .list-group-item:last-child{
+			border-bottom-right-radius:0px;
+			border-bottom-left-radius:0px;
+		}
+		.behclick-panel .list-group-item {
+			padding: 5px;
+		}
+		.behclick-panel .panel-heading {
+			/* 				padding: 10px 15px;
+                            border-bottom: 1px solid transparent; */
+			border-top-right-radius: 0px;
+			border-top-left-radius: 0px;
+			border-bottom: 1px solid darkslategrey;
+		}
+		.behclick-panel .panel-heading:last-child{
+			/* border-bottom: 0px; */
+		}
+		.behclick-panel {
+			border-radius: 0px;
+			border-right: 0px;
+			border-left: 0px;
+			border-bottom: 0px;
+			box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+		}
+		.behclick-panel .radio, .checkbox {
+			margin: 0px;
+			padding-left: 10px;
+		}
+		.behclick-panel .panel-title > a, .panel-title > small, .panel-title > .small, .panel-title > small > a, .panel-title > .small > a {
+			outline: none;
+		}
+		.behclick-panel .panel-body > .panel-heading{
+			padding:10px 10px;
+		}
+		.behclick-panel .panel-body {
+			padding: 0px;
+		}
+		.employer_detail_margin
+		{
+			
+			margin-top:-40px;
+		}
+		</style>
+
+	</head>
+	
+<body>
+	<div class="">
+	<ul class="list-inline index_ul" style="background-color:black;">
+		<li>
+		 <a href="#" class="index-a">
+			<span><i class="fas fa-phone-volume"></i>&nbsp;</span>9999639876
+		 </a>
+		</li>
+		<li>
+			<a href="#" class="index-a">
+				<span><i class="fas fa-envelope"></i>&nbsp; </span>sale@seejob.in
+			</a>
+		</li>
+		<li>
+			<a href="#" class="index-a">
+				<span><i class="fas fa-comments"></i>&nbsp; </span>Live Chat (10 am to 7 pm)
+			</a>
+		</li>
+	</ul>
+	<!-- main header -->
+	<nav class="navbar navbar-default megamenu sticky" style="z-index:1; margin-bottom:0px;font-family: -webkit-pictograph;">
+	  <div class="container-fluid">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	          <span class="sr-only">Toggle navigation</span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="<?=$url?>/index.php"><img src="<?=$url?>/image/seelogo.png" alt="logo" width="150"></a>
+	      </div>
+
+	      <!-- Collect the nav links, forms, and other content for toggling -->
+	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	        <ul class="nav navbar-nav">
+	          <!--li><a href="<?=$url?>/jobs.php"><i class="fas fa-search font_color"></i> Jobs<span class="sr-only">(current)</span></a></li-->
+	          <li class="dropdown megamenu-fw" style="display:none;">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="far fa-file-alt"></i> Resume Writing<span class="caret"></span></a>
+	            <ul class="dropdown-menu megamenu-content" role="menu">
+	              	<li>
+					    <div class="row">
+					        <div class="col-sm-4">
+					      		<h3 class="title">Featured Products</h3>
+								
+								<div data-ride="carousel" class="carousel slide" id="myCarousel">
+	                              <div class="carousel-inner">
+	                                <div class="item active left">
+	                                    <a href="#"><img alt="product 1" class="img-responsive" src="http://placehold.it/350x200/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+	                                    <h4><small>Featured Product 1</small></h4>                                        
+	                                    <button type="button" class="btn btn-default" href="#"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
+	                                </div><!-- End Item -->
+	                                <div class="item next left">
+	                                    <a href="#"><img alt="product 2" class="img-responsive" src="http://placehold.it/350x200/ef5e55/f5f5f5/&amp;text=Featured+Product"></a>
+	                                    <h4><small>Featured Product 2</small></h4>                                        
+	                                    <button type="button" class="btn btn-default" href="#"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
+	                                </div><!-- End Item -->
+	                                <div class="item">
+	                                    <a href="#"><img alt="product 3" class="img-responsive" src="http://placehold.it/350x200/2ecc71/f5f5f5/&amp;text=Featured+Product"></a>
+	                                    <h4><small>Featured Product 3</small></h4>                                        
+	                                    <button type="button" class="btn btn-default" href="#"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
+	                                </div><!-- End Item -->                                
+	                              </div><!-- End Carousel Inner -->
+	                            </div>
+					        </div><!-- end col-4 -->
+					        <div class="col-sm-4">
+					      		<h3 class="title">Latest Tutorials</h3>
+					            <ul class="media-list">
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">How To Master Fireworks’ CSS Properties Panel And CSS Professionalzr</a></p>
+					                    </div>
+					                </li>
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/ef5e55/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">Making A Complete Polyfill For The HTML5 Details Element</a></p>
+					                    </div>
+					                </li>
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/2ecc71/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">Creating A “Save For Later” Chrome Extension With Modern Web Tools</a></p>
+					                    </div>
+					                </li>
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">Scaling Down The BEM Methodology For Small Projects</a></p>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div><!-- end col-4 -->
+					        <div class="col-sm-4">
+					      		<h3 class="title">Google Map</h3>
+					      			<iframe width="340" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://my.ctrlq.org/maps/#roadmap|10|41.001769314909254|-74.88742636132815"></iframe>
+					        </div><!-- end col-4 -->
+					    </div><!-- end row -->
+					    <hr>
+					    <div class="row">
+					    	<div class="col-sm-6">
+					      		<h3 class="title">About Us</h3>
+					        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					        </div><!-- end col-6 -->
+					    	<div class="col-sm-3">
+					      		<h3 class="title">Follow Us</h3>
+					        	<p></p>
+					        </div><!-- end col-3 -->
+					    	<div class="col-sm-3">
+					      		<h3 class="title">Subscribe</h3>
+					        	<form class="navbar-form nopadding" method="post" action="">
+									<input type="text" class="form-control" placeholder="Enter email" name="email">
+									<input type="submit" value="Go" class="btn btn-primary">
+								</form>   
+					   		</div>               
+					    </div>
+					</li>
+	            </ul>
+	          </li>
+	          <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-search"></i> Jobs<span class="caret"></span></a>
+	            <ul class="dropdown-menu" role="menu">
+					<li><a href="<?=$url?>/jobs/"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;All Jobs</a></li>
+					<li class="divider"></li>
+					<?php
+					$head_cat_job = mysqli_query($db,"select * from cj_job_post group by job_cat ");
+					while($head_get_cat = mysqli_fetch_array($head_cat_job))
+					{
+						?>
+						<li><a href="<?=$url?>/jobs/?job_cat=<?=$head_get_cat['job_cat']?>"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;<?=$head_get_cat['job_cat']?></a></li>
+						<?php
+					}
+					?>
+	            </ul>
+	          </li>
+	          <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-info-circle"></i> Information<span class="caret"></span></a>
+	            <ul class="dropdown-menu" role="menu">
+					<li><a><i class="fa fa-building" aria-hidden="true"></i>&nbsp;Company</a></li>
+					<li class="divider"></li>
+					<?php
+					$head_pages_sql = mysqli_query($db,"select name,url from cj_pages where id!='6'");
+					while($head_pages_row = mysqli_fetch_array($head_pages_sql))
+					{
+						?>
+							<li><a href="<?=$url?>/company-<?=$head_pages_row["url"]?>" class="1footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;<?=$head_pages_row['name']?></a></li>
+						<?php
+					}
+					?>  
+	            </ul>
+	          </li>
+	          <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-table"></i> Services<span class="caret"></span></a>
+	            <ul class="dropdown-menu" role="menu">
+					<li><a><i class="fa fa-table" aria-hidden="true"></i>&nbsp;Services</a></li>
+					<li class="divider"></li>
+					<?php
+					$head_ser_sql = mysqli_query($db,"select s_name,s_url from `cj_servicescategory`");
+					while($head_ser_row = mysqli_fetch_array($head_ser_sql))
+					{
+						?>
+							<li><a href="<?=$url?>/services-<?=$head_ser_row["s_url"]?>" class="1footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;<?=$head_ser_row['s_name']?></a></li>
+						<?php
+					}
+					?>  
+	            </ul>
+	          </li>
+	          <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="far fa-handshake"></i> Recruiter Reach<span class="caret"></span></a>
+	            <ul class="dropdown-menu" role="menu">
+	              <li><a href="#">Action</a></li>
+	              <li><a href="#">Another action</a></li>
+	              <li><a href="#">Something else here</a></li>
+	              <li class="divider"></li>
+	              <li><a href="#">Separated link</a></li>
+	              <li class="divider"></li>
+	              <li><a href="#">One more separated link</a></li>
+	            </ul>
+	          </li>
+			   <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="far fa-file"></i> Latter<span class="caret"></span></a>
+	            <ul class="dropdown-menu" role="menu">
+	              <li><a href="#">Action</a></li>
+	              <li><a href="#">Another action</a></li>
+	              <li><a href="#">Something else here</a></li>
+	              <li class="divider"></li>
+	              <li><a href="#">Separated link</a></li>
+	              <li class="divider"></li>
+	              <li><a href="#">One more separated link</a></li>
+	            </ul>
+	          </li>
+			  
+			  <li><a href="#"><i class="far fa-bell"></i> Notification<br> </a></li>
+	        </ul>
+	        <!-- <form class="navbar-form navbar-left" role="search"> -->
+	          <!-- <div class="form-group"> -->
+	            <!-- <input type="text" class="form-control" placeholder="Search"> -->
+	          <!-- </div> -->
+	          <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+	        <!-- </form> -->
+	        <ul class="nav navbar-nav navbar-right">
+			<li class="active" data-toggle="modal" data-target="#myModal"><a href="#"><i class="fas fa-sign-in-alt "></i>&nbsp;<span>Login</span></a></li>
+	          <li><a href="#Jobseeker" data-toggle="modal" data-target="#Jobseeker"><i class="fas fa-upload"></i>&nbsp;Upload Resume</a></li>
+	          <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fas fa-users"></i>&nbsp;Employer-zone <span class="caret"></span></a>
+	            <ul class="dropdown-menu" role="menu">
+				  <li><a href="#myModal_emologin" data-toggle="modal" data-target="#myModal_emologin">Find CV</a></li>
+				  <li class="divider"></li>
+	                <li><a href="#myModal_emologin" data-toggle="modal" data-target="#myModal_emologin">Find Job</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	      </div><!-- /.navbar-collapse -->
+	  </div>
+	</nav>	
+		
+	<nav class="navbar1 navbar-default megamenu sticky" style="z-index:1; display:none;">
+	  <div class="container-fluid">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	          <span class="sr-only">Toggle navigation</span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="index.php"><img src="image/seelogo.png" alt="logo" width="150"></a>
+	      </div>
+
+	      <!-- Collect the nav links, forms, and other content for toggling -->
+	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+				  <li class="dropdown text-center">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fas fa-search font_color"></i><br> Jobs<span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+					  <li><a href="#">Action</a></li>
+					  <li><a href="#">Another action</a></li>
+					  <li><a href="#">Something else here</a></li>
+					  <li class="divider"></li>
+					  <li><a href="#">Separated link</a></li>
+					  <li class="divider"></li>
+					  <li><a href="#">One more separated link</a></li>
+					</ul>
+				  </li>
+				   <li class="dropdown megamenu-fw text-center">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="far fa-file-alt"></i><br> Resume Writing<span class="caret"></span></a>
+					<ul class="dropdown-menu megamenu-content" role="menu">
+						<li>
+							<div class="row">
+								<div class="col-sm-4">
+									<h3 class="title">Featured Products</h3>
+									
+									<div data-ride="carousel" class="carousel slide" id="myCarousel">
+									  <div class="carousel-inner">
+										<div class="item active left">
+											<a href="#"><img alt="product 1" class="img-responsive" src="http://placehold.it/350x200/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+											<h4><small>Featured Product 1</small></h4>                                        
+											<button type="button" class="btn btn-default" href="#"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
+										</div><!-- End Item -->
+										<div class="item next left">
+											<a href="#"><img alt="product 2" class="img-responsive" src="http://placehold.it/350x200/ef5e55/f5f5f5/&amp;text=Featured+Product"></a>
+											<h4><small>Featured Product 2</small></h4>                                        
+											<button type="button" class="btn btn-default" href="#"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
+										</div><!-- End Item -->
+										<div class="item">
+											<a href="#"><img alt="product 3" class="img-responsive" src="http://placehold.it/350x200/2ecc71/f5f5f5/&amp;text=Featured+Product"></a>
+											<h4><small>Featured Product 3</small></h4>                                        
+											<button type="button" class="btn btn-default" href="#"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
+										</div><!-- End Item -->                                
+									  </div><!-- End Carousel Inner -->
+									</div>
+								</div><!-- end col-4 -->
+								<div class="col-sm-4">
+									<h3 class="title">Latest Tutorials</h3>
+									<ul class="media-list">
+										<li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+											<div class="media-body">
+												<p><a href="#">How To Master Fireworks’ CSS Properties Panel And CSS Professionalzr</a></p>
+											</div>
+										</li>
+										<li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/ef5e55/f5f5f5/&amp;text=Featured+Product"></a>
+											<div class="media-body">
+												<p><a href="#">Making A Complete Polyfill For The HTML5 Details Element</a></p>
+											</div>
+										</li>
+										<li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/2ecc71/f5f5f5/&amp;text=Featured+Product"></a>
+											<div class="media-body">
+												<p><a href="#">Creating A “Save For Later” Chrome Extension With Modern Web Tools</a></p>
+											</div>
+										</li>
+										<li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+											<div class="media-body">
+												<p><a href="#">Scaling Down The BEM Methodology For Small Projects</a></p>
+											</div>
+										</li>
+									</ul>
+								</div><!-- end col-4 -->
+								<div class="col-sm-4">
+									<h3 class="title">Google Map</h3>
+										<iframe width="340" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://my.ctrlq.org/maps/#roadmap|10|41.001769314909254|-74.88742636132815"></iframe>
+								</div><!-- end col-4 -->
+							</div><!-- end row -->
+							<hr>
+							<div class="row">
+								<div class="col-sm-6">
+									<h3 class="title">About Us</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								</div><!-- end col-6 -->
+								<div class="col-sm-3">
+									<h3 class="title">Follow Us</h3>
+									<p></p>
+								</div><!-- end col-3 -->
+								<div class="col-sm-3">
+									<h3 class="title">Subscribe</h3>
+									<form class="navbar-form nopadding" method="post" action="">
+										<input type="text" class="form-control" placeholder="Enter email" name="email">
+										<input type="submit" value="Go" class="btn btn-primary">
+									</form>   
+								</div>               
+							</div>
+						</li>
+					</ul>
+				  </li>
+					  <li class="dropdown text-center">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="far fa-handshake"></i><br> Recruiter Reach <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+						  <li><a href="#">Action</a></li>
+						  <li><a href="#">Another action</a></li>
+						  <li><a href="#">Something else here</a></li>
+						  <li class="divider"></li>
+						  <li><a href="#">Separated link</a></li>
+						  <li class="divider"></li>
+						  <li><a href="#">One more separated link</a></li>
+						</ul>
+					  </li>
+					  <li class="dropdown text-center">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="far fa-file"></i><br> Latter<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+						  <li><a href="#">Action</a></li>
+						  <li><a href="#">Another action</a></li>
+						  <li><a href="#">Something else here</a></li>
+						  <li class="divider"></li>
+						  <li><a href="#">Separated link</a></li>
+						  <li class="divider"></li>
+						  <li><a href="#">One more separated link</a></li>
+						</ul>
+					  </li>
+					 <li class="text-center" data-toggle="modal" data-target="#myModal"><a href="#"><i class="fas fa-sign-in-alt"></i><br><span>Login</span></a></li>
+					 <li class="text-center"><a href="#"><i class="far fa-bell"></i><br>Notification<br> </a></li>
+	            </ul>
+	        <!-- <form class="navbar-form navbar-left" role="search"> -->
+	          <!-- <div class="form-group"> -->
+	            <!-- <input type="text" class="form-control" placeholder="Search"> -->
+	          <!-- </div> -->
+	          <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+	        <!-- </form> -->
+	        <ul class="nav navbar-nav navbar-right">
+	          <div class="index_rightnav">
+				  <div class="nav navbar-nav navbar-right text-center">
+					<div class="index_icon_img">
+						<li><a href="#Jobseeker" data-toggle="modal" data-target="#Jobseeker" >
+								<img id="myModal1" src="image/UPLOAD.png" style="width: 120px;">
+							</a>
+						</li>
+					</div>
+					<li>
+						<a href="#myModal" data-toggle="modal" data-target="#myModal" style="padding:0px;margin:10px;">
+							<img id="myModal1" src="image/emplyeeezone.png" style="width: 120px;">
+						</a>
+					</li>
+				  </div>
+				</div>
+	        </ul>
+	      </div><!-- /.navbar-collapse -->
+	  </div>
+	</nav>	
+	
+
+	<div class="container-fluid heding_color"></div>
+	 <div class="container employer_detail_margin">
+		<div class="row " style="margin-top:20px;">
+				<!--Filter-->
+				<div class="col-md-2 apply_box sticky" style="">
+					<form class="example" action="" method="GET" >
+						<div id="accordion" class="panel panel-primary behclick-panel" style="border:1px solid #;">
+							<div class="panel-heading" style="background-color:#4A90E2;">
+								<h3 class="panel-title">Quick Links</h3>
+							</div>
+							<br>
+							<div class="panel-body" >
+								<div id="collapse0" class="panel-collapse collapse in" >
+									<ul class="list-group">
+										<a href="#Profile <?=$i?>">
+										<li class="list-group-item">
+											<div class="radio">
+												<label><i class="fa fa-angle-right"></i> Profile <?=$i?></label>
+											</div>
+										</li>
+										</a>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</form>
+				</div>
+				<!--Filter-->
+			
+				<!--Employer Job-->
+				<div class="col-md-7">
+					<div id="Profile <?=$i?>" class="apply_box row" style="padding-bottom:30px;">
+						<div id="accordion1" class="panel1 1panel-primary 1behclick-panel" style="border:1px solid #;">
+							<div class="panel-heading" style="background-color:#4A90E2;">
+								<span class="panel-title">
+									<h3 style="color:#fff;" class="apjob_heading1"><b>Profile Headline <?=$i?></b> 
+									<span class="pull-right">
+										<a href="" data-toggle="modal" data-target="#<?=$i?>" ><img src="image/edit4.png" style="width:30px;"  data-toggle="tooltip" data-placement="top" title="Edit"></a>
+										<!--a href="" style="color:#fff;" data-toggle="modal" data-target="#<?=$i?>" ><i class="fa fa-edit" data-toggle="tooltip" data-placement="top" title="Edit"></i></a>
+										<a href="" data-toggle="modal" data-target="#<?=$i?>" ><img src="image/edit1.png" style="width:30px;background-color:#fff;"  data-toggle="tooltip" data-placement="top" title="Edit"></a-->
+										<script>
+											$(function () {
+											  $('[data-toggle="tooltip"]').tooltip()
+											})
+										</script>
+									<span>
+									</h3>
+								</span>
+							</div>
+						</div>
+						<!--div class="col-md-12 apply_content1">
+							<h3 style="color:#000;" class="apjob_heading1"><b>Profile <?=$i?></b> 
+							<a href="" data-toggle="modal" data-target="#<?=$i?>" ><img src="image/edit1.png" style="width:30px;" data-toggle="tooltip" data-placement="top" title="Edit"></a></h3><hr>
+							<script>
+								$(function () {
+								  $('[data-toggle="tooltip"]').tooltip()
+								})
+							</script>
+						</div-->
+						
+
+						<!-- Modal -->
+						  <div class="modal fade" id="<?=$i?>" role="dialog">
+							<div class="modal-dialog modal-lg">
+							  <div class="modal-content">
+								<div class="modal-header">
+								  <button type="button" class="close" data-dismiss="modal">&times;</button>
+								  <h4 class="modal-title">Modal Header</h4>
+								</div>
+								<div class="modal-body">
+								  <p>This is a large modal.</p>
+								</div>
+								<div class="modal-footer">
+								  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							  </div>
+							</div>
+						  </div>
+						<!-- Modal -->
+
+
+						
+						<div class="col-md-12">
+							<div class="col-md-9 apjob_container">
+								<div class="col-md-12">
+								</div>
+								<div class="row">
+									<div class="col-md-12 apjob_bottom">
+										<div class="col-md-1">
+											<span><i class="fas fa-snowflake"></i></span>
+										</div>
+										<div class="col-md-11">
+											<span>Keyskills-</span>
+											<span>
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+											</span>
+										</div>	
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-1 apjob_inbottom">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<div class="col-md-11 apjob_inbottom">
+											<span> Noida</span>
+										</div>	
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+					
+				
+				
+				<!--Employer Job-->
+				
+				<!-- profile -->
+				<div class="col-md-3 text-center sticky">
+					<div style="margin-bottom:10px;">
+						<div class="row apply_box" style="border:1px solid #FFF;background-color:#4A90E2;color:#fff;">
+							<h4 style="color:#fff;"><b>Yogesh</b></h4>
+							<hr style="margin-top:10px;margin-bottom:10px;background-color:#2e6da4;">
+							<div class="col-md-12">
+							<img src="image/dp/profile.jpg" class="img-circle" alt="face" width="50%;" style="border:1px solid #ccc;">
+								<hr style="margin-top:10px;margin-bottom:10px;">
+								<div>
+									<p style="font-size:11px;">Senior PHP Developer at solvezone</p>
+									<hr style="margin-top:5px;margin-bottom:5px;">
+									<p style="font-size:11px;">Noida Delhi</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- profile -->
+		</div>
+	 </div>
+	</div>
+	<div id="wait" style="display:none;padding:2px;"><center><img src="images/load2.gif" style="width:70px;position: absolute;top:0;bottom: 0;left: 0;right: 0;margin: auto;"></center></div>
+	<!-- inline scripts related to this page -->
+	
+</body>
+	<script>
+	// wait loader script
+	$(document).ready(function(){
+		$(document).ajaxStart(function(){
+			$("#wait").css("display", "block");
+		});
+		$(document).ajaxComplete(function(){
+			$("#wait").css("display", "none");
+		});
+		$("button").click(function(){
+			$("#txt").load("demo_ajax_load.asp");
+		});
+	});
+	
+	</script>
+</html>

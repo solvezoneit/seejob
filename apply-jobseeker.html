@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>apply-jobseeker</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="canonical" href=""/>
+		<meta charset="UTF-8"/> 
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<meta name="description" content=""/>
+		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+		<meta name="google-site-verification" content="" />
+		<meta name="keywords" content=""/>
+		<meta http-equiv="Content-Language" content="en-us" > 
+		<meta name="revisit-after" content="1 days" > 
+		<meta name="RATING" content="General" > 
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="css/w3.css"><link rel="stylesheet" href="socicon/social_media.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="seejob.css">
+		<!-- page specific plugin styles -->
+		<script src="js/3.2.1-jquery.min.js"></script>
+		<script src="js/3.3.7-js-bootstrap.min.js"></script>
+		<script defer src="js/fontawesome.com.js"></script>
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.full.min.js"></script>
+		<style>
+#panel {
+    padding: 50px;
+    display: none;
+}
+			
+#location-filter {
+
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 14px;
+  padding: 6px 6px 6px 6px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #fff;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  display: block;
+  font-family:initial;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+select option:checked,
+select option:hover {
+    box-shadow: 0 0 10px 100px red inset;
+}
+select:focus > option:checked { 
+    background: red !important;
+}
+		</style>
+	</head>
+	
+<body class="apjobbg">
+	<div class="container-fluid" style="padding-left:0px;padding-right:0px;">
+		<!-- main header -->
+	 <nav class="navbar navbar-default megamenu sticky" style="z-index:1; margin-bottom:0px;font-family: -webkit-pictograph;">
+	  <div class="container-fluid">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	          <span class="sr-only">Toggle navigation</span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="index.html"><img src="image/seelogo.png" alt="logo" width="150"></a>
+	      </div>
+
+	      <!-- Collect the nav links, forms, and other content for toggling -->
+	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	        <ul class="nav navbar-nav">
+	          <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+	          <li class="dropdown megamenu-fw">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resume Writing<span class="caret"></span></a>
+	            <ul class="dropdown-menu megamenu-content" role="menu">
+	              	<li>
+					    <div class="row">
+					        <div class="col-sm-4">
+					      		<h3 class="title">Featured Products</h3>
+								
+								<div data-ride="carousel" class="carousel slide" id="myCarousel">
+	                              <div class="carousel-inner">
+	                                <div class="item active left">
+	                                    <a href="#"><img alt="product 1" class="img-responsive" src="http://placehold.it/350x200/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+	                                    <h4><small>Featured Product 1</small></h4>                                        
+	                                    <button type="button" class="btn btn-default" href="#"> Add to Wishlist</button>       
+	                                </div><!-- End Item -->
+	                                <div class="item next left">
+	                                    <a href="#"><img alt="product 2" class="img-responsive" src="http://placehold.it/350x200/ef5e55/f5f5f5/&amp;text=Featured+Product"></a>
+	                                    <h4><small>Featured Product 2</small></h4>                                        
+	                                    <button type="button" class="btn btn-default" href="#"> Add to Wishlist</button>        
+	                                </div><!-- End Item -->
+	                                <div class="item">
+	                                    <a href="#"><img alt="product 3" class="img-responsive" src="http://placehold.it/350x200/2ecc71/f5f5f5/&amp;text=Featured+Product"></a>
+	                                    <h4><small>Featured Product 3</small></h4>                                        
+	                                    <button type="button" class="btn btn-default" href="#"> Add to Wishlist</button>      
+	                                </div><!-- End Item -->                                
+	                              </div><!-- End Carousel Inner -->
+	                            </div>
+					        </div><!-- end col-4 -->
+					        <div class="col-sm-4">
+					      		<h3 class="title">Latest Tutorials</h3>
+					            <ul class="media-list">
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">How To Master Fireworks’ CSS Properties Panel And CSS Professionalzr</a></p>
+					                    </div>
+					                </li>
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/ef5e55/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">Making A Complete Polyfill For The HTML5 Details Element</a></p>
+					                    </div>
+					                </li>
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/2ecc71/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">Creating A “Save For Later” Chrome Extension With Modern Web Tools</a></p>
+					                    </div>
+					                </li>
+					                <li class="media"><a class="pull-right" href="#"><img width="70" class="img-thumbnail media-object" alt="" src="http://placehold.it/60x35/3498db/f5f5f5/&amp;text=Featured+Product"></a>
+					                    <div class="media-body">
+					                        <p><a href="#">Scaling Down The BEM Methodology For Small Projects</a></p>
+					                    </div>
+					                </li>
+					            </ul>
+					        </div><!-- end col-4 -->
+					        <div class="col-sm-4">
+					      		<h3 class="title">Google Map</h3>
+					      			<iframe width="340" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://my.ctrlq.org/maps/#roadmap|10|41.001769314909254|-74.88742636132815"></iframe>
+					        </div><!-- end col-4 -->
+					    </div><!-- end row -->
+					    <hr>
+					    <div class="row">
+					    	<div class="col-sm-6">
+					      		<h3 class="title">About Us</h3>
+					        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					        </div><!-- end col-6 -->
+					    	<div class="col-sm-3">
+					      		<h3 class="title">Follow Us</h3>
+					        	<p></p>
+					        </div><!-- end col-3 -->
+					    	<div class="col-sm-3">
+					      		<h3 class="title">Subscribe</h3>
+					        	<form class="navbar-form nopadding" method="post" action="">
+									<input type="text" class="form-control" placeholder="Enter email" name="email">
+									<input type="submit" value="Go" class="btn btn-primary">
+								</form>   
+					   		</div>               
+					    </div>
+					</li>
+	            </ul>
+	          </li>
+	          <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-image"></i> Recruiter Reach<span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+					  <li><a href="#">Action</a></li>
+					  <li><a href="#">Another action</a></li>
+					  <li><a href="#">Something else here</a></li>
+					  <li class="divider"></li>
+					  <li><a href="#">Separated link</a></li>
+					  <li class="divider"></li>
+					  <li><a href="#">One more separated link</a></li>
+					</ul>
+	          </li>
+	        </ul>
+	        <form class="navbar-form navbar-left" role="search">
+	          <div class="form-group">
+	            <input type="text" class="form-control" placeholder="Search">
+	          </div>
+	          <button type="submit" class="btn btn-default">Submit</button>
+	        </form>
+	        <ul class="nav navbar-nav navbar-right">
+			  <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="far fa-bell"></i><span class="caret"></span></a>
+	            <ul class="dropdown-menu" role="menu">
+				  <li><a href="#"><span>Job Recommundation</span><p class="myprofile_para">Accosiate- Contract Drafting thomas return<p></a></li>
+				  <li class="divider"></li>
+				  <li><a href="#"><span>Job Recommundation</span><p class="myprofile_para">Accosiate- Contract Drafting thomas return<p></a></li>
+				  <li class="divider"></li>
+				  <li><a href="#"><span>Job Recommundation</span><p class="myprofile_para">Accosiate- Contract Drafting thomas return<p></a></li>
+				  <li class="divider"></li>
+				  <li><a href="#"><span>Job Recommundation</span><p class="myprofile_para">Accosiate- Contract Drafting thomas return<p></a></li>
+				  <li class="divider"></li>
+				  <li><a href="applyjobseekerpage.html"><span >See all</span></a></a></li>
+	            </ul>
+	          </li>
+				
+				<li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="far fa-user"></i><span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+					    <li><a href="updateprofilepage.html"  class="anchor_margin"><i class="fas fa-user-plus myp_btn"></i>&nbsp;Edit Profile</a></li>
+						<li class="divider"></li>
+						<li><a href="#"  class="anchor_margin"><i class="fas fa-spinner myp_btn"></i>&nbsp;Profile Performance</a></li>
+						<li class="divider"></li>
+						<li><a href="#" class="anchor_margin"><i class="fas fa-ban myp_btn"></i>&nbsp;Block Companies</a></li>
+						<li class="divider"></li>
+						<li><a href="#" class="anchor_margin"><i class="fas fa-lock-open myp_btn"></i>&nbsp;Change Password</a></li>
+						<li class="divider"></li>
+						<li><a href="loginpage.html" class="anchor_delete"><i class="fas fa-sign-out-alt myp_btn"></i>Logout</a></li>
+					</ul>
+				</li>
+	        </ul>
+	      </div><!-- /.navbar-collapse -->
+	  </div>
+	</nav>
+	 <div class="container">
+		<div class="row filter_row">
+				<div class="col-md-3 filter_box">
+					<form class="form-horizontal" action="/action_page.php">
+						<div class="form-group">
+						  <div class="col-md-12">
+							<h4 style="color:#fff;padding:10px;background-color:#2e6da4;">Filter - for quick search </h4>
+							<hr class="filter_hr">
+							<h4 style="color:#2e6da4;">Role</h4>
+							<input type="text" placeholder="Search.." name="search2" style="width:100%;padding:6px;">
+						  </div>
+						</div>
+						<div class="form-group1">
+							<div class="col-md-12 filter_role">
+								<div>
+									<div class="radio">
+									  <label  class="post_li"><input type="radio" name="optradioname" value="optradio1">feild</label>
+									</div>
+								</div>
+								<div class="post_div hideoptradio" style="display:none;" id="optradio1">
+									<div>
+										<label class="box">
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+										<label class="box">IT
+											<input type="checkbox">
+											<span class="checkmark"></span>
+										</label>
+										<label class="box">Marketing
+											<input type="checkbox">
+											<span class="checkmark"></span>
+										</label>
+										<label class="box">HR
+											<input type="checkbox">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+									
+								<div>
+									<div class="radio">
+									  <label  class="post_li"><input type="radio" name="optradioname" value="optradio2">Data Scientist</label>
+									</div>
+								</div>
+								<div class="post_div hideoptradio" style="display:none;" id="optradio2">
+									<div>
+										<label class="box">One
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+										<label class="box">Two
+											<input type="checkbox">
+											<span class="checkmark"></span>
+										</label>
+										<label class="box">Three
+											<input type="checkbox">
+											<span class="checkmark"></span>
+										</label>
+										<label class="box">Four
+											<input type="checkbox">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+				
+								<div>
+									<div class="radio">
+									  <label  class="post_li"><input type="radio" name="optradioname" value="optradio3">Driver</label>
+									</div>
+								</div>
+								
+								<div class="post_div hideoptradio" style="display:none;" id="optradio3">
+									<div>
+										<label class="box">One
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+										<label class="box">Two
+											<input type="checkbox">
+											<span class="checkmark"></span>
+										</label>
+										<label class="box">Three
+											<input type="checkbox">
+											<span class="checkmark"></span>
+										</label>
+										<label class="box">Four
+											<input type="checkbox">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">        
+						  <div class="col-md-12">
+							<div class="location-padding">
+								<div>
+									<h4>Location</h4>
+									<hr class="filter_hr">
+									<div>
+									  <select id="appearance" name="" class="form-control js-example-basic-single" >
+										 <option value=""><span>Noida</span></option>
+										 <option value="">Noida</option>
+										 <option value="">Noida</option>
+										 <option value="">Noida</option>
+										 <option value="red">Red</option>
+										 <option value="green">Green</option>
+									  </select>
+									</div>
+								</div>
+							</div>
+						  </div>
+						</div>
+						<div class="form-group">        
+						  <div class="col-md-12">
+							<div class="location-padding">
+								<div>
+									<h4>Sub-Location</h4>
+									<hr class="filter_hr">
+									<div>
+									  <select id="appearance" name="" class="form-control js-example-basic-single" >
+										 <option value=""><span>Noida</span></option>
+										 <option value="">Noida</option>
+										 <option value="">Noida</option>
+										 <option value="">Noida</option>
+										 <option value="red">Red</option>
+										 <option value="green">Green</option>
+									  </select>
+									</div>
+								</div>
+							</div>
+						  </div>
+						</div>
+						<div class="col-md-12"style="padding:0px;">
+							<h4>Experiance</h4>
+							<hr class="filter_hr">
+							<div class="col-md-6 post_col6" style="padding:0px;">
+								<div>
+									 <label>Min</label>
+									<select class="post_select">
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6 post_col6" style="padding:0px;">
+								<div>
+									<label>Max</label>
+									<select class="post_select">
+										<option value="">
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12"style="padding:0px; margin-top:10px;">
+							<div class="btn-group btn-group-justified">
+								<div class="btn-group">
+								  <button type="button" class="btn btn-warning">Reset</button>
+								</div>
+								<div class="btn-group">
+								  <button type="button" class="btn btn-info">Update</button>
+								</div>
+							</div>
+						</div>
+					</form> 
+				</div>
+				<div class="col-md-7">
+					<div class="apply_box row">
+						<div class="col-md-12 apply_content1">
+						<a href="compony-detaile.html" style="text-decoration:none;"><h4 class="apjob_heading1">Hiring for electrical engineer Hiring for electrical engineer  Hiring for electrical engineer Hiring for electrical engineer </h4></a>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="col-md-9 apjob_container">
+								<div class="col-md-12">
+									<div class="col-md-6 apjob_incontainer">
+										<div class="col-md-12 apjob_subcontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-flask"></i></span><br>
+												<span >Experiance</span><br>
+												<span>0-5 years</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-rupee-sign"></i></span><br>
+												<span>Monthly</span><br>
+												<span>8,000-20,000</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 apjob_sec_container">
+										<div class="col-md-12 apjob_sec_incontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fab fa-safari"></i></span><br>
+												<span >Shift Timing</span><br>
+												<span>9 to 6</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="far fa-building"></i></span><br>
+												<span >Compony</span><br>
+												<span>ADROIT...</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 apjob_bottom">
+										<div class="col-md-1">
+											<span><i class="fas fa-snowflake"></i></span>
+										</div>
+										<div class="col-md-11">
+											<span>Keyskills-</span>
+											<span>
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+											</span>
+										</div>	
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-1 apjob_inbottom">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<div class="col-md-11 apjob_inbottom">
+											<span> Noida</span>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="apply_box2 row">
+									<div class="row apjob_subbottom">
+										<div class="col-md-12">
+											<span>Posted by Individual<br>
+												07 Feb 2018, 09:29 AM
+											</span>
+										</div>
+										
+										<div class="col-md-12 apjob_subinbottom">
+											<i class="fa fa-check-circle"></i>
+											<span>Phone Verified
+											</span>
+										</div>
+										
+										<div class="col-md-12">
+											<span>
+												  <button onclick="document.getElementById('id01').style.display='block'" class="btn btn-default btn-block">Apply</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="id01" class="w3-modal w3-animate-opacity">
+						<div class="w3-modal-content w3-card-4" style="border:2px solid #2e6da4;">
+						  <header class="w3-container"> 
+							<span onclick="document.getElementById('id01').style.display='none'" 
+							class="w3-button w3-large w3-display-topright">&times;</span>
+							<h2 class="apply-heading">Apply For Job</h2>
+						  </header>
+						  <div class="w3-container">
+							<form>
+								<div class="resume-form">
+									<!-- <div style="  padding: 5px; font-size: 25px; border: 0;margin: 0;"><input type="text" name="email"  / style="width: 218px;"><input type="submit" value="»" / style="background: #000; -->
+											<!-- color: #fff;"></div> -->
+									<div class="col-md-6">
+									  <input type="text" class="apply-input" id="fname" name="fname" placeholder="enter name">
+									</div>
+									<div class="col-md-6">
+									  <input type="tel" class="apply-input" id="lname" name="number " placeholder="enter number">
+									</div>
+									<div class="col-md-6">
+									  <input type="email" class="apply-input" id="fname" name="email" placeholder="enter email">
+									</div>
+									<div class="col-md-6">
+									  <input type="text" class="apply-input" id="lname" name="location" placeholder="enter location">
+									</div>
+									<div class="apply-btn-resume">
+										<span>
+											<a href="#Jobseeker" onclick="document.getElementById('#').style.display='block'" class="btn-aply btn-aply1" id="flip" >apply with more detaile</a>
+											<button class="btn-download btn-download1 text-center">Apply</button>
+										</span>
+									</div>
+								</div>
+							</form>
+							<form>
+								<div class="modal-content Jobseeker_margin" id="panel">   
+									<div class="modal-header">
+										<div class="jobseeker_page">
+										 <h3 class="jobseeker_heading">Jobseeker</h3>
+										  <div class="scrollbar" id="style-7" >
+											<div class="row">
+												<div class="col-md-12">
+													<h4>My Resume</h4>
+												</div>
+
+												<div class="col-md-12 index_upload">
+													<label for="imageUpload" class="btn btn-primary btn-block btn-outlined">Upload Resume</label>
+													<input type="file" id="imageUpload" accept="image/*" class="jobseeker_display">
+													<span class="Jobseeker_text">File should be doc, docx, pdf format and less than 500 KB
+													</span>
+												</div>
+											</div>
+
+											<div class="row jobseeker_knowladge">
+												<div class="col-md-12 jobseeker_knowladge_box">
+													<h4 id="Gender">Do you have Basic knowledge of Microsoft Excel?</h4>
+													<div class="col-md-6 jobseeker_inside">
+														<label class="box1">Yes
+														  <input type="radio"  name="radio" checked="checked"> 
+														  <span class="checkmark"></span>
+														</label>
+													</div>
+													<div class="col-md-6 jobseeker_inside">
+														<label class="box1">No
+														  <input type="radio" name="radio">
+														  <span class="checkmark"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+
+												<div class="row">
+													<div class="col-md-12 jobseeker_knowladge_box1">
+														<h4> Which languages do you know?</h4>
+													</div>
+													<div class="col-md-3 jobseeker_inside1">
+														<label class="box">Hindi
+															<input type="checkbox" checked="checked" >
+															<span class="checkmark"></span>
+														</label>
+														<label class="box">Kannada
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+														<label class="box">English
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+														<label class="box">Malayalam
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+													</div>
+
+													<div class="col-md-3 jobseeker_inside1">
+														<label class="box">Hindi
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+														<label class="box">Kannada
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+														<label class="box">English
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+														<label class="box">Malayalam
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+													</div>
+
+													<div class="col-md-3 jobseeker_inside1" >
+														<label class="box">Hindi
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+														<label class="box">Kannada
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+														<label class="box">English
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+														<label class="box">Malayalam
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+													</div>
+
+													<div class="col-md-3 jobseeker_inside1">
+														<label class="box">Hindi
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+														<label class="box">Kannada
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+														<label class="box">English
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+														<label class="box">Malayalam
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+													</div>
+												</div>
+
+												<div class="row jobseeker_salary">
+													<div class="col-md-12 jobseeker_inside_salary">
+														<h4> What is your monthly salary(in rupees) ?</h4>
+														<div class="col-md-6 jobseeker_inside_salarybox">
+															<input type="text" name="selery" placeholder="Enter Your selery in rupess" class="jobseeker_input">
+														</div>
+													</div>
+												</div>
+											
+
+												<div class="row ">
+													<div class="col-md-12 jobseeker_knowladge_box1">
+														<h4>Which companies have you worked for?</h4>
+														<div class="col-md-6 jobseeker_inside_companies">
+															<input type="text" name="selery" placeholder=" Enter Which companies have you worked for?" class="jobseeker_input" >
+														</div>
+													</div>
+												</div>
+
+												
+
+												<div class="row jobseeker_salary" >
+													<div class="col-md-12 jobseeker_knowladge_box1">
+														<h4> How many years of experience do you have in this role?</h4>
+														<div class="col-md-6 jobseeker_inside_eperiance" >
+															<select class="form-control jobseeker_select" id="sel1">
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+														   </select>
+														</div>
+													</div>
+												</div>
+												
+
+												<div class="row">
+													<div class="col-md-12 jobseeker_knowladge_box1">
+														<h4>Designation</h4>	
+														<div class="col-md-6 jobseeker_inside_salarybox" >
+															<input type="text" name="selery" placeholder="Designation" class="jobseeker_input" >
+														</div>
+													</div>
+												</div>
+												
+												<div class="row jobseeker_salary">
+													<div class="col-md-12 jobseeker_knowladge_box1">
+														<h4>Which board have you passed 1 to 10 classes?</h4>
+														<div class="col-md-6 jobseeker_inside">
+															<label class="box1">CBSE
+															  <input type="radio" checked="checked" name="radio">
+															  <span class="checkmark"></span>
+															</label>
+															<label class="box1">ICSE
+															  <input type="radio" name="radio">
+															  <span class="checkmark"></span>
+															</label>
+															<label class="box1">State boards
+															  <input type="radio" name="radio">
+															  <span class="checkmark"></span>
+															</label>
+														</div>
+														<div class="col-md-6 jobseeker_inside">
+															<label class="box1">IB
+															  <input type="radio" name="radio">
+															  <span class="checkmark"></span>
+															</label>
+															<label class="box1">Other
+															  <input type="radio" name="radio">
+															  <span class="checkmark"></span>
+															</label>
+														</div>
+													</div>
+													<hr>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12">
+													<div class="col-md-6" style="padding:0px;">
+													<a href="#" onclick="document.getElementById('panel').style.display='none'" class="btn-print btn-print1 btn-block text-center">skip</a>
+													</div>
+													<div class="col-md-6" style="padding:0px;">
+														<button class="btn-download btn-download1 text-center btn-block">Apply</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							   </div>
+							</form>
+						  </div>
+						</div>
+					</div>
+					<div class="apply_inbox row" >
+						<div class="col-md-12 apply_content1">
+							<h4 class="apjob_heading1">Hiring for electrical engineer Hiring for electrical</h4>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="col-md-9 apjob_container">
+								<div class="col-md-12">
+									<div class="col-md-6 apjob_incontainer">
+										<div class="col-md-12 apjob_subcontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-flask"></i></span><br>
+												<span >Experiance</span><br>
+												<span>0-5 years</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-rupee-sign"></i></span><br>
+												<span>Monthly</span><br>
+												<span>8,000-20,000</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 apjob_sec_container">
+										<div class="col-md-12 apjob_sec_incontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fab fa-safari"></i></span><br>
+												<span >Shift Timing</span><br>
+												<span>9 to 6</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="far fa-building"></i></span><br>
+												<span >Compony</span><br>
+												<span>ADROIT..</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 apjob_bottom">
+										<div class="col-md-1">
+											<span><i class="fas fa-snowflake"></i></span>
+										</div>
+										<div class="col-md-11">
+											<span>Keyskills-</span>
+											<span>
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+											</span>
+										</div>	
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-1 apjob_inbottom">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<div class="col-md-11 apjob_inbottom">
+											<span> Noida</span>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="apply_box2 row">
+									<div class="row apjob_subbottom">
+										<div class="col-md-12">
+											<span>Posted by Individual<br>
+												07 Feb 2018, 09:29 AM
+											</span>
+										</div>
+										
+										<div class="col-md-12 apjob_subinbottom">
+											<i class="fa fa-check-circle"></i>
+											<span>Phone Verified
+											</span>
+										</div>
+										
+										<div class="col-md-12">
+											<span>
+												<button type="button" class="btn btn-default btn-block">Apply</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="apply_inbox row" >
+						<div class="col-md-12 apply_content1">
+							<h4 class="apjob_heading1">Hiring for electrical engineer Hiring for electrical engineer  Hiring for electrical engineer Hiring for electrical engineer </h4>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="col-md-9 apjob_container">
+								<div class="col-md-12">
+									<div class="col-md-6 apjob_incontainer">
+										<div class="col-md-12 apjob_subcontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-flask"></i></span><br>
+												<span >Experiance</span><br>
+												<span>0-5 years</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-rupee-sign"></i></span><br>
+												<span>Monthly</span><br>
+												<span>8,000-20,000</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 apjob_sec_container">
+										<div class="col-md-12 apjob_sec_incontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fab fa-safari"></i></span><br>
+												<span >Shift Timing</span><br>
+												<span>9 to 6</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="far fa-building"></i></span><br>
+												<span >Compony</span><br>
+												<span>ADROIT...</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 apjob_bottom">
+										<div class="col-md-1">
+											<span><i class="fas fa-snowflake"></i></span>
+										</div>
+										<div class="col-md-11">
+											<span>Keyskills-</span>
+											<span>
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+											</span>
+										</div>	
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-1 apjob_inbottom">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<div class="col-md-11 apjob_inbottom">
+											<span> Noida</span>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="apply_box2 row">
+									<div class="row apjob_subbottom">
+										<div class="col-md-12">
+											<span>Posted by Individual<br>
+												07 Feb 2018, 09:29 AM
+											</span>
+										</div>
+										
+										<div class="col-md-12 apjob_subinbottom">
+											<i class="fa fa-check-circle"></i>
+											<span>Phone Verified
+											</span>
+										</div>
+										
+										<div class="col-md-12">
+											<span>
+												<button type="button" class="btn btn-default btn-block">Apply</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="apply_inbox row" >
+						<div class="col-md-12 apply_content1">
+							<h4 class="apjob_heading1">Hiring for electrical engineer Hiring for electrical engineer  Hiring for electrical engineer Hiring for electrical engineer </h4>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="col-md-9 apjob_container">
+								<div class="col-md-12">
+									<div class="col-md-6 apjob_incontainer">
+										<div class="col-md-12 apjob_subcontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-flask"></i></span><br>
+												<span >Experiance</span><br>
+												<span>0-5 years</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-rupee-sign"></i></span><br>
+												<span>Monthly</span><br>
+												<span>8,000-20,000</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 apjob_sec_container">
+										<div class="col-md-12 apjob_sec_incontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fab fa-safari"></i></span><br>
+												<span >Shift Timing</span><br>
+												<span>9 to 6</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="far fa-building"></i></span><br>
+												<span >Compony</span><br>
+												<span>ADROIT...</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 apjob_bottom">
+										<div class="col-md-1">
+											<span><i class="fas fa-snowflake"></i></span>
+										</div>
+										<div class="col-md-11">
+											<span>Keyskills-</span>
+											<span>
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+											</span>
+										</div>	
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-1 apjob_inbottom">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<div class="col-md-11 apjob_inbottom">
+											<span> Noida</span>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="apply_box2 row">
+									<div class="row apjob_subbottom">
+										<div class="col-md-12">
+											<span>Posted by Individual<br>
+												07 Feb 2018, 09:29 AM
+											</span>
+										</div>
+										
+										<div class="col-md-12 apjob_subinbottom">
+											<i class="fa fa-check-circle"></i>
+											<span>Phone Verified
+											</span>
+										</div>
+										
+										<div class="col-md-12">
+											<span>
+												<button type="button" class="btn btn-default btn-block">Apply</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="apply_inbox row" >
+						<div class="col-md-12 apply_content1">
+							<h4 class="apjob_heading1">Hiring for electrical engineer Hiring for electrical engineer  Hiring for electrical engineer Hiring for electrical engineer </h4>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="col-md-9 apjob_container">
+								<div class="col-md-12">
+									<div class="col-md-6 apjob_incontainer">
+										<div class="col-md-12 apjob_subcontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-flask"></i></span><br>
+												<span >Experiance</span><br>
+												<span>0-5 years</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fas fa-rupee-sign"></i></span><br>
+												<span>Monthly</span><br>
+												<span>8,000-20,000</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 apjob_sec_container">
+										<div class="col-md-12 apjob_sec_incontainer">
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="fab fa-safari"></i></span><br>
+												<span >Shift Timing</span><br>
+												<span>9 to 6</span>
+											</div>
+											
+											<div class="col-md-6 text-center apjob_subincontainer">
+												<span><i class="far fa-building"></i></span><br>
+												<span >Compony</span><br>
+												<span>ADROIT...</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 apjob_bottom">
+										<div class="col-md-1">
+											<span><i class="fas fa-snowflake"></i></span>
+										</div>
+										<div class="col-md-11">
+											<span>Keyskills-</span>
+											<span>
+												Call Center BPO Data Entry Operation Inbound Calling Night Shift MNC Customer Care Executive backend Domestic bpo telecaller international bpo bpo fresher
+											</span>
+										</div>	
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-1 apjob_inbottom">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<div class="col-md-11 apjob_inbottom">
+											<span> Noida</span>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="apply_box2 row">
+									<div class="row apjob_subbottom">
+										<div class="col-md-12">
+											<span>Posted by Individual<br>
+												07 Feb 2018, 09:29 AM
+											</span>
+										</div>
+										
+										<div class="col-md-12 apjob_subinbottom">
+											<i class="fa fa-check-circle"></i>
+											<span>Phone Verified
+											</span>
+										</div>
+										
+										<div class="col-md-12">
+											<span>
+												<button type="button" class="btn btn-default btn-block">Apply</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 sticky text-center">
+					<div class="apjob_add">
+						<img src="image/ADD.jpg" alt="Mountain View" width="180">
+					</div>
+					
+					<div>
+						<img src="image/add1.jpg" alt="Mountain View" width="180">
+					</div>
+					
+					<div>
+						<img src="image/addfirst.jpg" alt="Mountain View" width="180">
+					</div>
+				</div>
+		</div>
+	 </div>
+	</div>
+						<!--Footer-->
+	<div class="text-left" style="background-color:#000;">
+		<div class="col-md-3" >
+		  <ul class="f_list f_list index_footul">
+			<li class="footer_heading">Information</li>
+			<li><a href="index.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;About Us</a></li>
+			<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Terms&Conditions</a></li>
+			<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Privacy Policy</a></li>
+			<li><a href="about.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Careers with Us</a></li>
+			<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Contact Us</a></li>
+			<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Fraud Alert</a></li>
+			<li><a href="about.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;FAQs</a></li>
+			<li><a href="index.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Summons / Notices</a></li>
+		  </ul>
+		</div>
+
+		<div class="col-md-3">
+			 <ul class="f_list f_list index_footul">
+			<li class="footer_heading">Job Seeker</li>
+				<li><a href="index.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Resume Writing</a></li>
+				<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Resume Display </a></li>
+				<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Resume Forwording</a></li>
+				<li><a href="about.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Connect to Recruiter</a></li>
+				<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Cover Letter</a></li>
+				<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Job Search </a></li>
+			</ul>
+		</div>
+
+		<div class="col-md-3">
+			<ul class="f_list f_list index_footul">
+				<li class="footer_heading">Employer Zone</li>
+				<li><a href="index.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Post Jobs</a></li>
+				<li><a href="login.php" class="footer_content"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;Find CV </a></li>
+				<form class="example employer_exp" action="/action_page.php">
+					<div> 
+						<h4 class="index_news">Subscribe Our Newsletter</h4>
+						<input type="text" placeholder="Enter your email-id" name="search2" style="background-color:#fff; padding:5px; width:70%">
+						<button type="submit" style="background: -webkit-linear-gradient(top,#f8e3ad,#eeba37); padding:7px;"><i class="fas fa-envelope"></i></button>
+					</div>
+				</form>
+			</ul>
+		</div>
+		  
+		<div class="col-md-3 ">
+			<ul class="f_list f_list index_footul">
+				<li class="footer_heading">Contact Us</li>
+				<li>
+					<div class="col-sm-6 index_footer">
+						<input type="text" class="form-control " placeholder="Enter Name" name="name" style="background-color:#fff;">
+					</div>
+					<div class="col-sm-6 index_footer">
+						<input type="email" class="form-control " placeholder="Enter email" name="Name" style="background-color:#fff;">
+					</div>
+					<div class="col-sm-12 index_footer">
+						<textarea class="form-control " rows="5" id="comment" placeholder="Type your msg..." style="background-color:#fff;"></textarea>
+					</div>
+					<div class="text-center">
+						<button type="button" class="btn btn-warning btn-block">Submit</button>
+					</div>
+					<div class="">
+						<ul class="soc index_social text-center">
+							<li><a class="soc-twitter" href="#" target="_blank"></a></li>
+							<li><a class="soc-facebook" href="#" target="_blank"></a></li>
+							<li><a class="soc-googleplus" href="#" target="_blank"></a></li>
+							<li><a class="soc-linkedin" href="#" target="_blank"></a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div style="padding:10px;text-align:center;color:#fff;border:0px solid #fff;">©2018 Seejob.com. All Rights Reserved.</div>
+	</div>
+	<!--Footer-->
+		
+	<!-- inline scripts related to this page -->
+	<script>
+	$('document').ready(function(){
+				$('.post_li').on('click',function(){
+			var getval = $("input[name=optradioname]:checked").val();
+			if(getval){
+				$('.hideoptradio').hide();
+				$('#'+getval).show();
+			}
+		})
+	})
+    </script>
+	<script>
+	$('document').ready(function(){
+		$(".js-example-basic-single").select2();
+		$(function() {
+		   $("#geStd").click(function() {
+			  if ($(this).attr('id') === "geStd") {
+				$("select#appearance").val("green").trigger('change');
+			  } else {
+				 $("#geStd").prop('checked', false);
+			  }
+		   });
+		   $("select").change(function() {
+			  if (this.value !== "green") {
+				 $("#geStd").prop('checked', false);
+			  }
+		   });
+		});
+	})
+    </script>
+	<script> 
+	$(document).ready(function(){
+		$("#flip").click(function(){
+			$("#panel").slideToggle("slow");
+		});
+	});
+	</script>
+	
+</body>
+</html>				

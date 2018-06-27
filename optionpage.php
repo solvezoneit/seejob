@@ -1,0 +1,359 @@
+<?php
+	session_start();
+	include"cjobadmin/api/db_config.php";
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loginpage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href=""/>
+	<meta charset="UTF-8" /> 
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="description" content=""/>
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	<meta name="google-site-verification" content="" />
+	<meta name="keywords" content=""/>
+	<meta http-equiv="Content-Language" content="en-us" > 
+	<meta name="revisit-after" content="1 days" > 
+	<meta name="RATING" content="General" > 
+	<link rel="stylesheet" href="css/w3.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- jQuery library -->
+	<script src="js/3.2.1-jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+	<script src="js/3.3.7-js-bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="seejob.css">
+	<script defer src="js/fontawesome.com.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="optionpage">
+		<div class="row" >
+			<p>Find the right job on seejon.com. You are only few steps away <br>rom millions of jobs</p>
+
+		</div>
+		<div class="row option_row">
+			<div class="col-md-6">
+				<div>
+					<span>
+						<i class="fas fa-book option_icon fa-4x">
+						</i>
+					</span>
+					</div><br>
+				<div>
+					 <button type="button" class="btn btn-primary btn-lg option_radius" data-toggle="modal" data-target="#fresher" >For Fresher</button>
+				</div>
+				<div class="option_row">
+					<p>I have just graduated/I haven't worked after graduation</p>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div>
+					<span>
+						<i class="fas fa-briefcase option_icon fa-4x"></i>
+					</span>
+				</div>
+				<div><br>
+					<button type="button" class="btn btn-primary btn-lg option_radius" data-toggle="modal" data-target="#Experience" >For Experience</button>
+				</div>
+				<div class="option_row">
+					<p>I have at least 1 month of work experience</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<span>More than 3 lakhs Jobs </span>
+				<span class="option_content"></span>
+					<span>Morethan 1 lakh Recruiters</span></div>
+		<div class="row">
+			<div class="option_para">
+				<p>I have at least 1 month of work experience</p>
+				<p>- Apply to jobs from the site while keeping your resume hidden from all recruiters.</p>
+				<p>- Apply to jobs from the site while keeping your resume hidden from all recruiters.</p>
+				<p>- Apply to jobs from the site while keeping your resume hidden from all recruiters.</p>
+			</div>
+		</div>
+		
+	</div>
+</div>
+</body>
+<!-- Modal -->
+	
+  <div class="modal fade" id="fresher" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header option_padding">
+          <button type="button" class="close index_close" data-dismiss="modal">&times;</button>
+          <h3 class="registerfresh_heading">Upload <span class="registerfresh_heading1">Resume</span> Here</h3>
+        </div>
+        <div class="modal-body">
+		 <form class="form-horizontal " action="/action_page.php">
+		 	<div class="form-group ">
+		     	<div class="input-group col-sm-8 col-sm-offset-2 register_input">
+					<span class="input-group-addon register_input" ><i class="fas fa-user register_fa"></i></span>
+					<input id="name" type="text" class="form-control" name="email" placeholder=" Name">
+				</div>
+			</div>
+		    <div class="form-group">
+		     	<div class="input-group col-sm-8 col-sm-offset-2">
+				    <span class="input-group-addon register_input"><i class="fas fa-envelope-open register_fa"></i></span>
+				    <input id="email" type="email" class="form-control" name="email" placeholder="Enter Email address">
+				</div>
+			</div>
+
+		   
+			<div class="form-group">
+		     	<div class="input-group col-sm-8 col-sm-offset-2">
+			      	<span class="input-group-addon register_input"><i class="fas fa-key register_fa" ></i></span>
+			      	<input type="password" class="form-control" name="email" placeholder=" Password">
+				</div>
+			</div>
+
+			 	<div class="form-group">
+					<div class="input-group col-sm-8 col-sm-offset-2">
+				      	<span class="input-group-addon register_input"><i class="fas fa-lock register_fa"></i></span>
+				      	<input type="password" class="form-control" name="email" placeholder="Conform Password">
+					</div>
+		    	</div>
+
+		    <div class="form-group">
+		     	<div class="input-group col-sm-8 col-sm-offset-2 " >
+				    <span class="input-group-addon register_input"><i class="fas fa-mobile register_fa"></i></span>
+				    <input type="tel" class="form-control" name="email" placeholder="Mobile Number">
+				</div>
+		    </div>
+			
+			<div class="form-group">
+		     	<div class="input-group col-sm-8 col-sm-offset-2 ">
+				 <span class="input-group-addon register_input"><i class="fas fa-map-marker register_fa"></i></span>
+					<select class="chosen-select form-control" id="form-field-select-3" data-placeholder="Choose a State...">
+						<option value=""> Location </option>
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+					</select>
+				</div>
+			</div>
+			
+			<div class="form-group">
+		     	<div class="input-group col-sm-8 col-sm-offset-2">
+			      	<label for="imageUpload" class="btn btn-warning btn-block registerfresh_upload">Upload Resume</label>
+					<input type="file" id="imageUpload" accept="image/*" class="registerexexp_display">
+				</div>
+			</div>
+			
+			
+			 
+			 <div class="form-group">
+		     	<div class="input-group col-sm-8 col-sm-offset-2" >
+					<div class="text-left">
+						<input type="checkbox" name="vehicle1" value="Bike"><span class="registerfresh_para">&nbsp;I agree to the terms&condition</span><br>
+					</div>
+			      	<button type="button" class="btn btn-info btn-block registerfresh_btnrgs">Register Now</button>
+				</div>
+			 </div>
+		 </form>
+		
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- experience -->
+  <div class="modal fade" id="Experience" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header ption_padding">
+			  <button type="button" class="close index_close" data-dismiss="modal">&times;</button>
+			  <h3 class="registerfresh_heading ">Upload <span class="registerfresh_heading1">Resume</span> Here</h3>
+			</div>
+			<div class="modal-body">
+				<form class="form-horizontal " action="/action_page.php">
+				<div class="form-group ">
+					<div class="input-group col-sm-8 col-sm-offset-2">
+						<span class="input-group-addon register_input"><i class="fa fa-user register_fa"></i></span>
+						<input type="text" class="form-control" name="email" placeholder="Name">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group col-sm-8 col-sm-offset-2">
+					<span class="input-group-addon register_input"><i class="fas fa-envelope-open register_fa" ></i></span>
+						<input type="email" class="form-control" name="email" placeholder="Enter Email address">
+					</div>
+				</div>
+
+			   
+				<div class="form-group">
+					<div class="input-group col-sm-8 col-sm-offset-2">
+						<span class="input-group-addon register_input"><i class="fas fa-key register_fa" ></i></span>
+						<input type="password" class="form-control" name="email" placeholder="create Password">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="input-group col-sm-8 col-sm-offset-2 " >
+						<span class="input-group-addon register_input"><i class="fas fa-mobile register_fa"></i></span>
+						<input type="tel" class="form-control" name="email" placeholder="Mobile Number">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="input-group col-sm-8 col-sm-offset-2 ">
+						 <span class="input-group-addon register_input"><i class="fas fa-map-marker register_fa"></i></span>
+						<select class="chosen-select form-control location-btn">
+							<option value=""> Location </option>
+							<option value="AL">Alabama</option>
+							<option value="AK">Alaska</option>
+							<option value="AZ">Arizona</option>
+							<option value="AR">Arkansas</option>
+							<option value="CA">California</option>
+							<option value="CO">Colorado</option>
+							<option value="CT">Connecticut</option>
+							<option value="DE">Delaware</option>
+							<option value="FL">Florida</option>
+							<option value="GA">Georgia</option>
+							<option value="HI">Hawaii</option>
+							<option value="ID">Idaho</option>
+							<option value="IL">Illinois</option>
+							<option value="IN">Indiana</option>
+							<option value="IA">Iowa</option>
+							<option value="KS">Kansas</option>
+							<option value="KY">Kentucky</option>
+							<option value="LA">Louisiana</option>
+							<option value="ME">Maine</option>
+							<option value="MD">Maryland</option>
+							<option value="MA">Massachusetts</option>
+							<option value="MI">Michigan</option>
+							<option value="MN">Minnesota</option>
+							<option value="MS">Mississippi</option>
+							<option value="MO">Missouri</option>
+							<option value="MT">Montana</option>
+							<option value="NE">Nebraska</option>
+							<option value="NV">Nevada</option>
+							<option value="NH">New Hampshire</option>
+							<option value="NJ">New Jersey</option>
+							<option value="NM">New Mexico</option>
+							<option value="NY">New York</option>
+							<option value="NC">North Carolina</option>
+							<option value="ND">North Dakota</option>
+							<option value="OH">Ohio</option>
+							<option value="OK">Oklahoma</option>
+							<option value="OR">Oregon</option>
+							<option value="PA">Pennsylvania</option>
+							<option value="RI">Rhode Island</option>
+							<option value="SC">South Carolina</option>
+							<option value="SD">South Dakota</option>
+							<option value="TN">Tennessee</option>
+							<option value="TX">Texas</option>
+							<option value="UT">Utah</option>
+							<option value="VT">Vermont</option>
+							<option value="VA">Virginia</option>
+							<option value="WA">Washington</option>
+							<option value="WV">West Virginia</option>
+							<option value="WI">Wisconsin</option>
+							<option value="WY">Wyoming</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="input-group col-sm-8 col-sm-offset-2 ">
+						<select id="sel1" onchange="giveSelection(this.value)" class="select-button">
+						  <option value="a">Experiance In month</option>
+						  <option value="b">01</option>
+						  <option value="b">02</option>
+						  <option value="b">03</option>
+						  <option value="b">04</option>
+						  <option value="b">05</option>
+						  <option value="b">06</option>
+						</select>
+						<select id="sel2" class="select-button">
+						  <option data-option="a">Experiance In Years</option>
+						  <option data-option="a">2007</option>
+						  <option data-option="b">2008</option>
+						  <option data-option="b">2009</option>
+						  <option data-option="b">2010</option>
+						  <option data-option="b">2011</option>
+						  <option data-option="b">2012</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="input-group col-sm-8 col-sm-offset-2">
+						<label for="imageUpload" class="btn btn-warning btn-block registerexexp_uplod">Upload Resume</label>
+						<input type="file" accept="image/*" class="registerexexp_display">
+					</div>
+				</div>
+				
+				
+				 
+				<div class="form-group">
+					<div class="input-group col-sm-8 col-sm-offset-2 exp-content" >
+						<div class="text-left">
+							<input type="checkbox" name="vehicle1" value="Bike">&nbsp;I agree to the terms&condition<br>
+						</div>
+						<button type="button" class="btn btn-info btn-block registerexexp_rgs">Register Now</button>
+					</div>
+				</div>
+			 </form> 
+			
+			</div>
+		</div>
+	</div>
+  </div>
+</html>

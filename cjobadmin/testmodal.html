@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Modal</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Multiple Modal Testing</h1>
+
+
+		<!-- .......................First modal........................ -->
+
+		<a data-toggle="modal" data-target="#myModal" class="btn btn-primary">first modal</a>
+		<div class="modal" id="myModal">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Modal title</h4>
+        </div><div class="container"></div>
+        <div class="modal-body">
+          This is my first modal.
+          <br>
+          <br>
+          <ul>
+          	<li><a href="" data-toggle="modal" data-target="#myModal2">Launch second model</a></li>
+          </ul>
+          <br>
+          <br>
+          <br>
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Close</a>
+          <a href="#" class="btn btn-primary">Save changes</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+ <!-- .......................Second modal........................ -->
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog modal-sm" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+	<h3 class="modal-title" id="myModalLabel">Jobs Description</h3>
+  </div>
+  <div class="modal-body">
+	
+	  <p>This is second modal</p><br><br>
+	  
+  </div>
+  <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Close</a>
+          <a href="#" class="btn btn-primary">Save changes</a>
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

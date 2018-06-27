@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Postjobpage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/w3.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="js/1.6.4-angular.min.js"></script>
+	<script src="js/3.2.1-jquery.min.js"></script>
+	<script src="js/3.3.7-js-bootstrap.min.js"></script>
+		<script defer src="js/fontawesome.com.js"></script>
+	<link rel="stylesheet" type="text/css" href="seejob.css">
+</head>
+	
+<body class="post_body">
+ <div class="container-fluid post_contan">
+	<nav class="navbar navbar-default emap_nav">
+		<div class="container-nav ">
+			<div class="row employe_menu text-center">
+				<div class="col-md-4">
+					<a class="navbar-brand employer_brand" href="index.html">
+						<img src="image/seelogo.png" alt="Obaju logo">
+					</a>
+				</div>
+				<div class="col-md-3">
+					
+				</div>
+				
+				<div class="col-md-3 col-md-offset-2 profile_margin">
+					<div class="btn-group">
+						<button type="button" class=" w3-button w3-medium w3-circle w3-cyan dropdown-toggle" data-toggle="dropdown">
+						<i class="fas fa-bell buy_color"></i><span class="alarm">2</span>
+						</button>
+						<div class="dropdown-menu myprofile_menu1" role="menu">
+							<div class="row myprofile_option">
+								<div class="col-md-10 myprofile_submenu1">
+									<h4 class="myprofile_heading">Job Recommundation</h4>
+									<p class="myprofile_para">Accosiate- Contract Drafting thomas return<p>
+								</div>
+								<div class="col-md-2">
+									<h4 class="myprofile_heading1">12</h4>
+								</div>
+							</div>
+							<div class="row myprofile_option">
+								<div class="col-md-10 myprofile_submenu1">
+									<h4 class="myprofile_heading">Job Recommundation</h4>
+									<p class="myprofile_para">Accosiate- Contract Drafting thomas return<p>
+								</div>
+								<div class="col-md-2">
+									<h4 class="myprofile_heading1">02</h4>
+								</div>
+							</div>
+							<div class="row myprofile_option">
+								<div class="col-md-10 myprofile_submenu1">
+									<h4 class="myprofile_heading">Job Recommundation</h4>
+									<p class="myprofile_para">Accosiate- Contract Drafting thomas return<p>
+								</div>
+								<div class="col-md-2">
+									<h4 class="myprofile_heading1">12</h4>
+								</div>
+							</div>
+							<div class="row myprofile_option">
+								<div class="col-md-12 delete_option">
+									<a href="applyjobseekerpage.html" class="see_all" ><span >See all</span></a>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="btn-group myp_btn">
+						<button type="button" class="w3-button w3-medium w3-circle w3-deep-purple  dropdown-toggle" data-toggle="dropdown">
+							<i class="fas fa-user myp_bell"></i>
+						</button>
+						<ul class="dropdown-menu myprofile_menu" role="menu">
+							<li><a href="updateprofilepage.html" class="anchor_margin"><i class="fas fa-user-plus myp_btn"></i>Edit Profile</a></li>
+							<li><a href="#" class="anchor_margin"><i class="fas fa-spinner myp_btn"></i>Profile Performance</a></li>
+							<li><a href="#" class="anchor_margin"><i class="fas fa-ban myp_btn"></i>Block Companies</a></li>
+							<li><a href="#" class="anchor_margin"><i class="fas fa-lock-open myp_btn"></i>Change Password</a></li>
+							<li><a href="loginpage.html" class="anchor_delete"><i class="fas fa-sign-out-alt myp_btn"></i>Logout</a></li>
+						</ul>
+					</div>
+				</div>
+						<!-- <a href="Postjobpage.html" class="btn btn-info employe_btn" role="button" >Post for free </a> -->
+						</div>
+		</div>
+	</nav>	
+	<div class="row">
+	 <form >
+	  <div class="col-md-7 col-md-offset-1">
+		<div class="post_page">
+				<h3 class="Post_heading">Post a job</h3>
+					<div>
+						<div class="row post-box">
+							<div class="col-md-12">
+								<h4 id="Role">Role:</h4><hr class="post_hr">
+							</div>
+							
+							<div class="col-md-12">
+								<span>
+									<input type="text" name="search" placeholder="Marketing, IT, carpenter" class="inputbox">
+								</span>	
+							</div>
+								<div class="col-md-12" >
+									<div class="post_ul" >
+									 <div class="row">
+										<div class="col-md-6" >
+											<div>
+												<div class="radio">
+												  <label  class="post_li"><input type="radio" name="optradioname" value="optradio1">Doctor</label>
+												</div>
+												</div>
+											<div class="post_div hideoptradio" style="display:none;" id="optradio1">
+												<div>
+													<label class="box">rew
+														<input type="checkbox" checked="checked">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Two
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Three
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Four
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+												
+											<div>
+												<div class="radio">
+												  <label  class="post_li"><input type="radio" name="optradioname" value="optradio2">Data Scientist</label>
+												</div>
+											</div>
+											<div class="post_div hideoptradio" style="display:none;" id="optradio2">
+												<div>
+													<label class="box">One
+														<input type="checkbox" checked="checked">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Two
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Three
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Four
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+										
+											<div>
+												<div class="radio">
+												  <label  class="post_li"><input type="radio" name="optradioname" value="optradio3">Driver</label>
+												</div>
+											</div>
+											
+											<div class="post_div hideoptradio" style="display:none;" id="optradio3">
+												<div>
+													<label class="box">One
+														<input type="checkbox" checked="checked">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Two
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Three
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Four
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6" >
+											<div>
+												<div class="radio">
+												  <label  class="post_li"><input type="radio" name="optradioname" value="optradio4">Bouncer</label>
+												</div>
+											</div>
+										
+											<div class="post_div hideoptradio" style="display:none;" id="optradio4">
+												<div>
+													<label class="box">One
+														<input type="checkbox" checked="checked">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Two
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Three
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Four
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+											
+											<div>
+												<div class="radio">
+												  <label  class="post_li"><input type="radio" name="optradioname" value="optradio5">Dye Maker</label>
+												</div>
+											</div>
+											<div class="post_div hideoptradio" style="display:none;" id="optradio5">
+												<div>
+													<label class="box">One
+														<input type="checkbox" checked="checked">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Two
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Three
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Four
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+											
+											<div>
+												<div class="radio">
+												  <label  class="post_li"><input type="radio" name="optradioname" value="optradio6">Electrician</label>
+												</div>
+											</div>
+											<div class="post_div hideoptradio" style="display:none;" id="optradio6">
+												<div>
+													<label class="box">One
+														<input type="checkbox" checked="checked">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Two
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Three
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+													<label class="box">Four
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+									 </div>
+									</div>
+								</div>
+						</div>
+						
+						<div class="row post-box">
+							<div class="col-md-12">
+								<h4 id="job_type">Job Type</h4><hr class="post_hr">
+								<div class="col-md-6 post_option">
+									<label class="box1">Work From Home
+										<input type="radio" checked="checked" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									<label class="box1">Full Time Jobs
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									<label class="box1">Part Time Jobs
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									
+								</div>
+								<div class="col-md-6 post_option" >
+									<label class="box1">Work Abroad
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									<label class="box1">Internships
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									
+								</div>
+							</div>
+						</div>
+						
+						<div class="row post-box" >
+							<div class="col-md-12">
+								<h4>Company Name</h4><hr class="post_hr">
+								<input type="text" name="search" placeholder="Hiring for company...." class="inputbox1"  >
+							</div>
+						</div>
+							
+						<div class="row post-box" >
+							<div class="col-md-12">
+								<h4>Locality</h4><hr class="post_hr">
+									<div class="col-md-12 post-padding">
+										<div class="col-md-6 post-padding">
+											<label>Location</label>
+											<input type="text" name="selery" class="post_input" >
+										</div>
+										<div class="col-md-6">
+											<label>Sub Location</label>
+											<input type="text" name="selery" class="post_input" >
+										</div>
+									</div>
+							</div>
+						</div>
+						
+						<div class="row post-box" >
+							<div class="col-md-12">
+								<h4 id="Experiance">Experiance</h4><hr class="post_hr">
+							</div>
+							<div class="col-md-6 post_col6">
+								<div>
+									<label>Min</label>
+									<select class="post_select">
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6 post_col6">
+								<div>
+									<label>Max</label>
+									<select class="post_select">
+									</select>
+								</div>
+							</div>
+						</div>
+							
+							
+						<div class="row post-box" >
+							<div class="col-md-12">
+								<h4 id="Educatuion">Education</h4><hr class="post_hr">
+								<div class="col-md-6 post_col6">
+									<label class="box1">One
+										<input type="radio" checked="checked" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									<label class="box1">Two
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									<label class="box1">Three
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									<label class="box1">Four
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="col-md-6 post_col6">
+									<label class="box1">Five
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									<label class="box1">six
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									<label class="box1">seven
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									<label class="box1">eight
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+							
+						<div class="row post-box" >
+							<div class="col-md-12 post_col12">
+								<h4 id="Salary">Salary</h4><hr class="post_hr">
+							</div>
+							<div class="col-md-6 post_col6">
+								<div>
+									<label>Min</label>
+									<select  class="post_select">
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6 post_col6">
+								<div>
+									<label>Max</label>
+									<select class="post_select">
+									</select>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row post-box">
+							<div class="col-md-12">
+								<h4>Work Shifts</h4><hr class="post_hr">
+								<div class="col-md-6 post_col6">
+									<label class="box1">Morning
+										<input type="radio" checked="checked" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									<label class="box1">Noon
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									
+								</div>
+								<div class="col-md-6 post_col6">
+									<label class="box1">Evening
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									<label class="box1">Night
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+									
+						<div class="row post-box" >
+							<div class="col-md-12">
+								<h4 id="Gender">Gender</h4><hr class="post_hr">
+								<div class="col-md-6 post_col6">
+									<label class="box1">Female
+										<input type="radio" checked="checked" name="radio">
+										<span class="checkmark"></span>
+									</label>
+									
+								</div>
+								<div class="col-md-6 post_col6">
+									<label class="box1">male
+										<input type="radio" name="radio">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+									
+						<div class="row post-box" >
+							<div class="col-md-12">
+								<h4 id="Age">Age</h4><hr class="post_hr">
+							</div>
+							<div class="col-md-6 post_col6">
+								<div>
+									<label>Min</label>
+									<select class="post_select">
+									</select>
+									</div>
+							</div>
+								<div class="col-md-6 post_col6">
+									<div>
+										<label>Max</label>
+										<select class="post_select">
+										</select>
+									</div>
+								</div>
+						</div>
+						<div class="row post-box" >
+							<div class="col-md-12">
+								<h4>Job Description</h4><hr class="post_hr">
+								<div class="col-md-12 postjob_padding">
+									<textarea rows="6" cols="103" placeholder="Describe here..."></textarea>
+								</div>
+							</div>
+						</div>
+											
+						<div class="row post-box" >
+							<div class="col-md-12 post_detaile">
+							  <h4>Recruiter Detaile</h4><hr class="post_hr">
+								<div class="col-md-12 post-padding">
+									<div class="col-md-6 post-padding">
+										<input type="text" name="selery" placeholder="Enter Your Email Id" class="post_input">
+									</div>
+									<div class="col-md-6">
+										<input type="text" name="selery" placeholder="Enter Your mobile number" class="post_input">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row ">
+							<div class="col-md-12">
+								<div class="btn-group btn-group-justified">
+									<a href="#" class="btn btn-danger">Reset All</a>
+									<a href="#" class="btn btn-info">Apply</a>
+								</div>
+							</div>
+						</div>
+					</div>
+		</div>
+	   </div>
+	  </form>	 
+			 <div class="col-md-3 sticky">
+				<div class=" post-secbox sticky">
+					<h3 class="post-secbox_heading">Payment</h3>
+					<p>5 free localities&nbsp;<span class="post_para">&nbsp;$0</span></p>
+					<hr class="postsec_hr">
+					<p>Total payment&nbsp;<span class="post_para">&nbsp;$0</span></p>
+					<a href="#" class="btn btn-warning btn-block" >Post Job</a>
+				</div>
+			 </div>
+	</div>
+</div>
+	<div class="sticky_footer" >
+		<div class="profile-footer" >
+			<ul class="list-inline registerexexp_ul">
+				<li class="border-register">About US
+				</li>
+				<li>Privacy
+				</li>
+				<li>Secuirty
+				</li>
+				<li>Terms&condition
+				</li>
+				<li class="registerexexp_social">
+					<span>Follow Us on&nbsp;</span>
+						<a href="#"><span><img src="image/facebook_circle-512.png" alt="fb_icon" class="register_fb"></span></a>
+						<a href="#" class="fab fa-twitter register_twiet"></a>
+						<a href="#" class="fab fa-google register_google"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+	$('document').ready(function(){
+		$('.post_li').on('click',function(){
+			var getval = $("input[name=optradioname]:checked").val();
+			if(getval){
+				$('.hideoptradio').hide();
+				$('#'+getval).show();
+			}
+		})
+	})
+    </script>
+</body>
+</html>								
